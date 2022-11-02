@@ -1,13 +1,18 @@
-//приветственное сообщение
+//greeting message
 
 function showMessage() {
-    let name = prompt("Как тебя зовут?");
-    alert(`Привет, ${name}!`);
+    let person = prompt("Как тебя зовут?");
+    if (person) {
+        alert(`Привет, ${person}!`);
+    } else {
+        alert("Привет, Гость!");
+    }
+    
 }
 
 
 
-//калькулятор
+//calculator
 
 function addition() {
     let a = prompt("Первое число");
