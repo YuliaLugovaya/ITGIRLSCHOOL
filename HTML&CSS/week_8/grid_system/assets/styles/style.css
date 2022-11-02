@@ -1,0 +1,44 @@
+div.col.col-7.gallery {
+    padding-right: 6px;
+  }
+  
+  div.col.col-5 {
+    padding-left: 6px;
+  }
+  
+  div.col-12.col.col-title {
+    padding-top: 0;
+  }
+  
+  div.col-12.col.col-box {
+    padding-bottom: 0;
+  }
+  
+  .col {
+    padding: 6px;
+  }
+  
+  .block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #4976bf;
+    color: white;
+    height: 100%;
+  }
+  
+  .description, .related {
+    min-height: 100px;
+  }
+  
+  .gallery {
+    min-height: 250px;
+  }
+  
+  .title {
+    min-height: 30px;
+  }
+  
+  .box {
+    min-height: 220px;
+  }

@@ -1,0 +1,234 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: 'Roboto Slab', serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 160%;
+    color: #000000;
+}
+
+.wrapper {
+    min-height: 100%;
+    margin: 0 auto;
+}
+
+[class*="__container"]{
+    max-width: 1290px;
+    margin: 0 auto;
+}
+
+[class*="__picture"]{
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.button {
+    background: #5222D0;
+    border-radius: 100px;
+    border: none;
+    font-family: Inter, sans-serif;
+    font-weight: 800;
+    font-size: 13px;
+    line-height: 13px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+
+.button:hover {
+    background: #EC615B;
+}
+
+.title {
+    font-family: 'Jost', sans-serif;
+    font-weight: 700;
+    font-size: 2.9em;
+    line-height: 1.1em;
+    text-transform: uppercase;
+}
+
+.nav__link {
+    padding-right: 1.5em;
+    text-decoration: none;
+    color: #000000;
+}
+
+.nav__link:hover {
+    text-decoration: underline;   
+}
+
+/*---------------Header---------------*/
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5vh;
+}
+
+.header__button {
+    width: 115px;
+    height: 38px;
+}
+
+/*---------------Main---------------*/
+
+.main__container {
+    display: grid;
+    grid-template-columns: 48% 52%;
+    grid-template-rows: 85% 15%;
+    max-width: 1365px;
+}
+
+.main__card {
+    padding-left: 10%;
+}
+
+.main__title {
+    width: 35vw;
+    margin-top: 1em;
+    margin-bottom: 0.3em;
+}
+
+.main__text {
+    width: 35vw;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.main__button {
+    width: 270px;
+    height: 84px;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-size: 1.5em;
+}
+
+.main__nav {
+    padding-left: 10%;
+    margin-top: 1em;
+}
+
+.nav__link_purple {
+    color: #5222D0;
+    
+}
+
+/*---------------Opportunities---------------*/
+
+.opportunities__title, .opportunities__items, .opportunities__nav {
+    padding-left: 55px;
+}
+
+.opportunities__items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 5vw;   
+}
+
+.subtitle {
+    font-size: 1.5em;
+}
+
+.card__picture {
+    width: 365px;
+    height: 233px;
+    background: #EC615B;
+    object-fit: contain;
+}
+
+.subscribe {
+    width: 365px;
+    height: 233px;
+    background: #EC615B;
+}
+
+.subscribe__button {
+    width: 135px;
+    height: 38px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.subtitle_subscribe {
+    color: #FFFFFF;
+    margin-left: 20px;
+}
+
+.subscribe__email {
+    width: 312px;
+    height: 50px;
+    margin-left: 20px;
+    padding-left: 10px;
+    border: none;
+}
+
+.opportunities__nav {
+    margin-top: 5vh;
+}
+
+@media screen and (max-width: 1200px){
+    .title {
+        font-size: 2.5em;
+    }
+
+    .subtitle {
+        font-size: 1.3em;
+    }
+}
+
+@media screen and (max-width: 992px){
+    .title {
+        font-size: 2em;
+    }
+
+    .subtitle {
+        font-size: 1.2em;
+    }
+
+    .main__container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 45% 1fr 10%;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .main__card {
+        padding-left: 0;
+        justify-self: center;
+        align-self: center;
+        text-align: center;
+    }
+
+    .main__title, .main__text {
+        width: 80vw;
+        text-align: center;
+    }
+
+    .main__nav {
+        padding-left: 0;
+        align-self: center;
+    }
+}
+
+@media screen and (max-width: 576px){
+    .main__container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 55% 1fr 10%;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .title {
+        font-size: 1.5em;
+    }
+
+    .subtitle {
+        font-size: 1em;
+    }
+}

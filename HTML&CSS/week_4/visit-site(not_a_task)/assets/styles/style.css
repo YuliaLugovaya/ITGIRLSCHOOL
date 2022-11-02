@@ -1,0 +1,370 @@
+html, body {
+    height: 100%;
+    min-width: 320px;
+}
+
+body {
+    width: 1440px;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+li {
+    list-style: square;
+    margin-left: 0;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+/*header*/
+
+.header {
+    width: 1215px;
+    height: 81px;
+    margin-left: 112.5px;
+    margin-right: 112.5px;
+    display: inline-flex;
+    justify-content: space-between;  
+}
+
+.header_image {
+    margin-top: 40px;
+    margin-bottom: 13px;
+}
+
+.header_nav {
+    margin-top: 40px;
+    margin-bottom: 13px;
+}
+
+.header_menu_link {
+    color: black;
+    font-weight: 400;
+    font-size: 16px;
+    text-align: right;
+    padding-left: 40px;
+}
+
+.header_menu_link:hover {
+    color: #FF8A56;
+}
+
+/*Блок 1*/
+
+.container_1 {
+    width: 1215px;
+    height: 685px;
+    margin-left: 112.5px;
+    margin-right: 112.5px;
+    display: inline-block;
+    margin-top: 87px;
+}
+
+.container_1_block_1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container_1_title {
+    width: 580px;
+    height: 246px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 82px;
+    margin-top: 30px;
+    margin-bottom: 0;
+
+}
+
+#title {
+    color: #FF8A56;
+    
+}
+
+.container_1_text {
+    width: 547px;
+    height: 66px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 33px;
+    color: #666666;
+    margin-top: 50px;
+    margin-bottom: 43px;
+}
+
+.container_1_buttons {
+    display: block;
+    width: 372px;
+    height: 58px;
+}
+
+.container_1_button_1 {
+    color: white;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 18px;
+    background: #000000;
+    border-radius: 0px;
+    text-align: center;
+    padding-top: 17px;
+    padding-right: 37.5px;
+    padding-bottom: 23px;
+    padding-left: 37.5px;
+    margin-top: 0;
+}
+
+.container_1_button_2 {
+    color: rgb(0, 0, 0);
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 18px;
+    background: #ffffff;
+    border-radius: 0px;
+    text-align: center;
+    padding-top: 17px;
+    padding-right: 57.5px;
+    padding-bottom: 23px;
+    padding-left: 57.5px;
+    margin-top: 0;
+}
+
+.container_1_button_2_arrow {
+    
+}
+
+.container_1_photo {
+    width: 520px;
+    height: 520px;
+    margin-bottom: 78px;
+}
+
+.container_1_block_2 {
+    height: 252px;  
+}
+
+.container_1_block_2_title {
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 18px;
+color: rgb(0, 0, 0);
+margin-top: 78px;
+margin-bottom: 45px;
+text-align: center;
+
+}
+
+.container_1_block_2_images {
+    text-align: center;
+
+}
+
+.container_1_block_2_image {
+    margin-left: 100px;
+    margin-bottom: 80px;
+}
+
+#container_1_block_2_image_1 {
+    margin-left: 0;
+}
+
+.container_2 {
+}
+
+.container_2_block_1 {
+    text-align: center;
+    display: block;
+    justify-content: space-between
+
+
+}
+
+.container_2_block_1_title_1 {
+    color: #FF5E69;
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 22px;
+line-height: 22px;
+text-align: center;
+letter-spacing: 4px;
+text-transform: uppercase;
+margin-top: 80px;
+margin-bottom: 0;
+
+
+
+}
+
+.container_2_block_1_title_2 {
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 54px;
+line-height: 59px;
+letter-spacing: 1px;
+width: 768px;
+display: inline-block;
+text-align: center;
+justify-content: center;
+margin-top: 25px;
+margin-bottom: 115px;
+
+}
+
+.container_2_block_2 {
+    text-align: center;  
+}
+
+.container_2_block_2_icons {
+    text-align: left;
+}
+
+.container_2_block_2_column_title {
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 26px;
+text-align: left;
+}
+
+.container_2_block_2_column_text {
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 28px;
+color: #666666;
+text-align: left;
+}
+
+.container_2_block_2_column {
+    width: 306px;
+    height: 381px;
+    display: inline-block;
+    text-align: left;
+}
+
+#container_2_block_2_column_text_1 {
+width: 252px;
+}
+
+#container_2_block_2_column_text_2 {
+    width: 227px;
+}
+
+#container_2_block_2_column_text_3 {
+    width: 256px;
+    
+}
+
+.container_2_block_2_column_list {
+    padding: 0;
+    margin-left: 17px;
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 28px;
+}
+
+#container_2_block_2_column_2 {
+    margin-left: 90px;
+}
+
+#container_2_block_2_column_3 {
+    margin-left: 90px;
+}
+
+.container_3_block_1 {
+    margin-left: 112.5px;
+    margin-right: 112.5px;
+    
+    
+}
+
+.container_3_block_1_title { 
+    text-align: left;
+    
+}
+
+.container_3_block_1_title_1 {
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 22px;
+line-height: 22px;
+letter-spacing: 4px;
+text-transform: uppercase;
+color: #B16CEA;
+}
+
+.container_3_block_1_title_2 {
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 54px;
+line-height: 59px;
+letter-spacing: 1px;
+color: #000000;
+width: 800px;
+height: 118px;
+
+}
+
+.container_3_block_1_button {
+    height: 58px;
+    
+}
+
+#container_3_block_1_btn {
+    color: white;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 18px;
+    background: #000000;
+    border-radius: 0px;
+    padding: 20px;
+    
+    
+}
+
+
+
+
+/* скрываем чекбоксы и блоки с содержанием */
+.hide, .hide + label ~ .faq {
+    display: none; 
+}
+/* вид текста label */
+.hide + label,
+.hide:checked + label {
+    padding: 0;
+    color: black;
+    cursor: pointer;
+}
+/* вид текста label при активном переключателе */
+.hide:checked + label {
+    color: black;
+    border-bottom: 0;
+}
+/* когда чекбокс активен показываем блоки с содержанием  */
+.hide:checked + label + .faq {
+    display: block; 
+    padding: 10px; 
+}

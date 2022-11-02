@@ -1,0 +1,61 @@
+.wrapper {
+    height: 100%;
+}
+
+.header {
+    background: #343a40;   
+}
+
+.header .navbar {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.main_container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.card-main {
+    margin: 1.5rem 0px;
+}
+
+.card-main-body {
+    padding: 3rem 1.5rem;
+    background-color: #e9ecef;
+}
+
+.card-main-title {
+    font-size: 4em;
+    font-weight: 400;
+}
+
+.card-deck {
+    margin-bottom: 1.5rem;
+}
+
+.card-footer {
+    text-align: center;
+    padding: 1rem;
+}
+
+.card-body {
+    text-align: center;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #343a40;
+    height: 15vh;
+}
+
+.footer_container {
+    padding-top: 2rem;
+    text-align: center;
+    color: white;
+}
+
