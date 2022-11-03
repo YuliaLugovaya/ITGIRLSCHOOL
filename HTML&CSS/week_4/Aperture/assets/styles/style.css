@@ -16,6 +16,7 @@ body {
     font-style: normal;
     font-weight: 400;
     color: #ffffff;
+    background: #000000;
 }
 
 .wrapper {
@@ -67,7 +68,7 @@ body {
     margin-right: 24px;
     padding-top: 35px;
     padding-bottom: 35px;
-    font-size: 13px;
+    font-size: 15px;
     line-height: 20px;
     text-decoration: none;
     color: white;
@@ -111,7 +112,12 @@ body {
     background: #FFFFFF;
     border-radius: 14px;
     color: #000000;
+    border: none;
+    cursor: pointer;
+}
 
+.header_button:hover {
+    box-shadow: 0px 0px 15px 0px rgba(255,255,255,0.75);
 }
 
 /*Главный блок*/
@@ -120,7 +126,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    height: 716px;
+    padding-top: 50vh;
     background-image: url(../../assets/images/container_1_image.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -190,8 +196,8 @@ body {
 /*Что мы делаем*/
 
 .container_2 {
-    height: 1558px;
-    background: #000000;  
+    padding-top: 10vh;
+    padding-bottom: 10vh; 
     
 }
 
@@ -207,7 +213,6 @@ body {
 
 .container_2_title_1 {
     padding: 0;
-    margin-top: 113px;
     margin-bottom: 15px;
     font-size: 40px;
     line-height: 42px;
@@ -230,7 +235,7 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
     max-width: 1200px;
-    margin: 0 auto;  
+    margin: 0 auto;
 }
 
 
@@ -333,7 +338,6 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 600px;
     background-image: url(../../assets/images/container_3_image.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -346,7 +350,6 @@ body {
     flex-direction: row;
     align-items: flex-end;
     justify-content: end;
-    width: 1440px;
     height: 340px;
 
 }
@@ -378,7 +381,6 @@ body {
     flex-direction: row;
     justify-content: flex-end;
     align-items: flex-end;
-    width: 1440px;
     height: 260px;
 }
 
@@ -424,7 +426,6 @@ body {
     justify-content: center;
     width: 50vw;
     height: 540px;
-    background: #000000;
 
 }
 
@@ -493,7 +494,6 @@ body {
 
 .container_6 {
     height: 500px;
-    background: #000000;
 }
 
 .container_6_block_1 {
@@ -604,8 +604,6 @@ body {
     padding: 0;
     margin-top: 100px;
     margin-bottom: 10px;
-
-
 }
 
 .footer_logo {
@@ -653,6 +651,10 @@ body {
     line-height: 20px;
     color: #FFFFFF;
     text-decoration: none;
+}
+
+.footer_menu:hover {
+    text-decoration: underline;
 }
 
 .footer_line {
@@ -760,9 +762,6 @@ body {
     padding-left: 20px;
 }
 
-.facebook {
-    padding-left: 26px;
-}
 
 
 
