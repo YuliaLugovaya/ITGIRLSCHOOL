@@ -36,6 +36,7 @@ body {
     font-size: 16px;
     line-height: 19px;
     color: #FFFFFF;
+    cursor: pointer;
 }
 
 .button:hover {
