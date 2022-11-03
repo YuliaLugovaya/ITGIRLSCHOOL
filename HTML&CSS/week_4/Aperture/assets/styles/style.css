@@ -20,10 +20,9 @@ body {
 
 .wrapper {
     min-height: 100%;
-    max-width: 1440px;
     margin: 0 auto;
-
 }
+
 
 /*Header*/
 
@@ -123,6 +122,8 @@ body {
     justify-content: flex-end;
     height: 716px;
     background-image: url(../../assets/images/container_1_image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .container_1_block_1 {
@@ -303,19 +304,27 @@ body {
 
 #container_2_image_1 {
     background-image: url(../../assets/images/container_2_image_1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     
 }
 
 #container_2_image_2 {
     background-image: url(../../assets/images/container_2_image_2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #container_2_image_3 {
     background-image: url(../../assets/images/container_2_image_3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #container_2_image_4 {
     background-image: url(../../assets/images/container_2_image_4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 /*Фотография заката*/
@@ -326,6 +335,8 @@ body {
     justify-content: center;
     height: 600px;
     background-image: url(../../assets/images/container_3_image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 /*Общий блок фотографий*/
@@ -411,7 +422,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 720px;
+    width: 50vw;
     height: 540px;
     background: #000000;
 
@@ -452,9 +463,11 @@ body {
     flex-direction: row;
     justify-content: flex-end;
     align-items: flex-end;
-    width: 720px;
+    width: 50vw;
     height: 540px;
     background-image: url(../../assets/images/container_4_image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .container_4_icons_block {
@@ -472,6 +485,8 @@ body {
     justify-content: flex-end;
     height: 600px;
     background-image: url(../../assets/images/container_5_image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 /*Клиенты*/
@@ -528,6 +543,8 @@ body {
     justify-content: flex-end;
     height: 600px;
     background-image: url(../../assets/images/container_7_image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 /*Призыв*/
