@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/styles/normalize.css" />
+    <link rel="stylesheet" href="./assets/styles/style.css" />
+    <title>Неделя 14</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1 class="title">Практические задания Недели 14</h1>
+
+      <div class="color-blocks">
+        <section class="message" id="message" onclick="message()">
+          <h2 class="subtitle">Задание №1 - приветственное сообщение</h2>
+          <p>
+            Как тебя зовут?
+            <input type="text" id="person" placeholder="Меня зовут..." />
+          </p>
+          <button class="message__button" onclick="showMessage()">
+            Отправить имя
+          </button>
+          <div>
+            <p id="out"></p>
+          </div>
+        </section>
+
+        <section class="calculator" id="calculator" onclick="calculator()">
+          <h2 class="subtitle">Задание №2 - калькулятор</h2>
+          <p>Число 1: <input type="text" id="number1" /></p>
+          <p>Число 2: <input type="text" id="number2" /></p>
+
+          <div>
+            <button class="calculator__button" onclick="addition()">
+              &#43;
+            </button>
+            <button class="calculator__button" onclick="subtraction()">
+              &#8722;
+            </button>
+            <button class="calculator__button" onclick="multiplication()">
+              &#215;
+            </button>
+            <button class="calculator__button" onclick="division()">
+              &#247;
+            </button>
+          </div>
+          <div>
+            <p id="result">Результат:</p>
+          </div>
+        </section>
+      </div>
+    </div>
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>
