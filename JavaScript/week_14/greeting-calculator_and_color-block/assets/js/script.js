@@ -15,7 +15,6 @@ function showMessage() {
   document.getElementById('out').innerHTML = result;
 }
 
-
 //calculator
 
 function addition(){
@@ -68,13 +67,15 @@ function addition(){
 
   //color-blocks
 
-  function message(){
-    let message = document.getElementById('message');
-    message.style.background = 'burlywood';
+  function select(sender) {
+    sender.classList.add('selected');
+    
   }
 
-  function calculator(){
-    let calculator = document.getElementById('calculator');
-    calculator.style.background = 'burlywood';
+  //gallery
+
+  function mountains(){
+    let mountains = document.getElementById('mountains');
+    mountains.src = './assets/images/image_2.jpg';
   }
   
