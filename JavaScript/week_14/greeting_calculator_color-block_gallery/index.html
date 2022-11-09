@@ -13,7 +13,7 @@
       <h1 class="title">Практические задания Недели 14</h1>
 
       <div class="color-blocks">
-        <section class="block" id="message" onclick="select(this)">
+        <section class="block" onclick="select(this)">
           <h2 class="subtitle">Приветственное сообщение</h2>
           <p>
             Как тебя зовут?
@@ -53,18 +53,21 @@
       </div>
 
       <section class="gallery">
-        <h2 class="gallery__title">Галерея</h2>
-        <div id="gallery__photos">
+        <h2 class="subtitle subtitle_gallery">Галерея</h2>
+        <div class="gallery__photos">
           <div class="gallery__item">
-            <img src="./assets/images/image_1.jpg" alt="Горы" />
-            <img src="./assets/images/image_2.jpg" alt="Растение" />
-            <img src="./assets/images/image_3.jpg" alt="Море" />
+            <img class="image" src="./assets/images/image_1.jpg" alt="Горы" />
+            <img
+              class="image"
+              src="./assets/images/image_2.jpg"
+              alt="Растение"
+            />
+            <img class="image" src="./assets/images/image_3.jpg" alt="Море" />
+            <img class="image" src="./assets/images/image_4.jpg" alt="Поле" />
           </div>
-          <div class="buttons">
-            <input type="button" class="prev" value="Назад" />
-            <input type="button" class="next" value="Вперед" />
-            <!--<button class="prev">Назад</button>
-            <button class="next">Вперед</button>-->
+          <div class="gallery__buttons">
+            <button class="prev">Назад</button>
+            <button class="next">Вперед</button>
           </div>
         </div>
       </section>

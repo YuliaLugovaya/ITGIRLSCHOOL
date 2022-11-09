@@ -74,25 +74,25 @@ function addition(){
 
   //gallery
 
-  let photo = document.querySelectorAll('#gallery__photos .gallery__item img');
+  let image = document.querySelectorAll('.image');
   let prev = document.querySelector('.prev');
   let next = document.querySelector('.next');
-  let i = 0;
+  let photo = 0;
   
   prev.onclick = function(){
-    photo[i].style.display = 'none';
-    i--;
-    if(i < 0) {
-      i = photo.length - 1;
+    image[photo].style.display = 'none';
+    photo--;
+    if(photo < 0) {
+      photo = image.length - 1;
     }
-    photo[i].style.display = 'block';
+    image[photo].style.display = 'block';
   }
 
   next.onclick = function(){
-    photo[i].style.display = 'none';
-    i++;
-    if(i >= photo.length) {
-      i = 0;
+    image[photo].style.display = 'none';
+    photo++;
+    if(photo >= image.length) {
+      photo = 0;
     }
-    photo[i].style.display = 'block';
+    image[photo].style.display = 'block';
   }

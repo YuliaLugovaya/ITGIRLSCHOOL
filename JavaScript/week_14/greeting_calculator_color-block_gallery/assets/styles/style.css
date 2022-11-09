@@ -1,0 +1,124 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: beige;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    color: coral;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    text-align: center;
+}
+
+.color-blocks {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 5vw;
+}
+
+.block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30vw;
+    padding: 5vh;
+    border: 2px solid coral;
+    cursor: pointer;
+    background: rgb(254, 252, 229);
+}
+
+.block:hover {
+    box-shadow: 0px 0px 15px 0px rgba(255,127,80,0.75);
+}
+
+.selected {
+    background: rgb(255, 222, 180);
+}
+
+.subtitle {
+    color: chocolate;
+    text-align: center;
+}
+
+.message__button {
+    padding: 10px 20px;
+    border-radius: 3px;
+    border: none;
+    background: burlywood;
+    cursor: pointer;
+    transition: 0.5s;
+    color: white;
+}
+
+.message__button:hover {
+    box-shadow: 0px 0px 15px 0px rgba(255,127,80,0.75);
+}
+
+.calculator__button {
+    width: 50px;
+    height: 50px;
+    border-radius: 3px;
+    border: none;
+    background: burlywood;
+    cursor: pointer;
+    transition: 0.5s;
+    color: white;
+    font-size: 2rem;
+}
+
+.calculator__button:hover {
+    box-shadow: 0px 0px 15px 0px rgba(255,127,80,0.75);
+}
+
+.gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10vh;
+}
+
+.subtitle_gallery {
+    color: rgb(85, 85, 85);
+}
+
+.gallery__photos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image {
+    display: none;
+}
+
+.image:first-child {
+    display: block;
+}
+
+.gallery__buttons {
+    padding: 1.5rem;
+}
+
+.prev, .next {
+    width: 70px;
+    height: 30px;
+    cursor: pointer;
+    border-radius: 3px;
+    border: none;
+    background: rgb(150, 150, 150);
+    cursor: pointer;
+    transition: 0.5s;
+    color: white;
+}
+
+.prev:hover, .next:hover {
+    background: rgb(85, 85, 85);
+}
+
