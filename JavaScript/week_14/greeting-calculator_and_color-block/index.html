@@ -14,7 +14,7 @@
 
       <div class="color-blocks">
         <section class="block" id="message" onclick="select(this)">
-          <h2 class="subtitle">Задание №1 - приветственное сообщение</h2>
+          <h2 class="subtitle">Приветственное сообщение</h2>
           <p>
             Как тебя зовут?
             <input type="text" id="person" placeholder="Меня зовут..." />
@@ -28,7 +28,7 @@
         </section>
 
         <section class="block" id="calculator" onclick="select(this)">
-          <h2 class="subtitle">Задание №2 - калькулятор</h2>
+          <h2 class="subtitle">Калькулятор</h2>
           <p>Число 1: <input type="text" id="number1" /></p>
           <p>Число 2: <input type="text" id="number2" /></p>
 
@@ -53,22 +53,20 @@
       </div>
 
       <section class="gallery">
-        <div class="gallery__item">
-          <img
-            src="./assets/images/image_1.jpg"
-            alt="Горы"
-            id="mountains"
-            onclick="mountains()"
-          />
+        <h2 class="gallery__title">Галерея</h2>
+        <div id="gallery__photos">
+          <div class="gallery__item">
+            <img src="./assets/images/image_1.jpg" alt="Горы" />
+            <img src="./assets/images/image_2.jpg" alt="Растение" />
+            <img src="./assets/images/image_3.jpg" alt="Море" />
+          </div>
+          <div class="buttons">
+            <input type="button" class="prev" value="Назад" />
+            <input type="button" class="next" value="Вперед" />
+            <!--<button class="prev">Назад</button>
+            <button class="next">Вперед</button>-->
+          </div>
         </div>
-        <!--<div class="gallery__item">
-          <img src="./assets/images/image_2.jpg" alt="Растение">
-        </div>
-        <div class="gallery__item">
-          <img src="./assets/images/image_3.jpg" alt="Море">
-        </div>-->
-        <button class="gallery__button" id="prev">Назад</button>
-        <button class="gallery__button" id="next">Вперед</button>
       </section>
     </div>
     <script src="./assets/js/script.js"></script>
