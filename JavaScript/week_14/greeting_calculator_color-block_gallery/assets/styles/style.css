@@ -31,6 +31,7 @@ body {
     padding: 5vh;
     border: 2px solid coral;
     cursor: pointer;
+    transition: 0.5s;
     background: rgb(254, 252, 229);
 }
 
@@ -58,7 +59,7 @@ body {
 }
 
 .message__button:hover {
-    box-shadow: 0px 0px 15px 0px rgba(255,127,80,0.75);
+    background: rgb(205, 157, 95);
 }
 
 .calculator__button {
@@ -74,7 +75,7 @@ body {
 }
 
 .calculator__button:hover {
-    box-shadow: 0px 0px 15px 0px rgba(255,127,80,0.75);
+    background: rgb(205, 157, 95);
 }
 
 .gallery {
