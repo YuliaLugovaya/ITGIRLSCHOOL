@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/styles/normalize.css" />
+    <link rel="stylesheet" href="./assets/styles/style.css" />
+    <title>Неделя 14</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1 class="title">Практические задания Недели 14</h1>
+
+      <div class="color-blocks">
+        <div class="block" onclick="select(this)">
+          <h2 class="subtitle">Приветственное сообщение</h2>
+          <p>
+            Как тебя зовут?
+            <input type="text" id="person" placeholder="Меня зовут..." />
+          </p>
+          <button class="message__button" onclick="showMessage()">
+            Отправить имя
+          </button>
+          <div>
+            <p id="out"></p>
+          </div>
+        </div>
+
+        <div class="block" id="calculator" onclick="select(this)">
+          <h2 class="subtitle">Калькулятор</h2>
+          <p>Число 1: <input type="text" id="number1" /></p>
+          <p>Число 2: <input type="text" id="number2" /></p>
+
+          <div>
+            <button class="calculator__button" onclick="addition()">
+              &#43;
+            </button>
+            <button class="calculator__button" onclick="subtraction()">
+              &#8722;
+            </button>
+            <button class="calculator__button" onclick="multiplication()">
+              &#215;
+            </button>
+            <button class="calculator__button" onclick="division()">
+              &#247;
+            </button>
+          </div>
+          <div>
+            <p id="result">Результат:</p>
+          </div>
+          <button class="message__button" onclick="getReset()">
+            Сбросить значения
+          </button>
+        </div>
+      </div>
+
+      <div class="gallery">
+        <h2 class="subtitle subtitle_gallery">Галерея</h2>
+        <div class="gallery__photos">
+          <div class="gallery__item">
+            <img class="image" src="./assets/images/image_1.jpg" alt="Горы" />
+            <img
+              class="image"
+              src="./assets/images/image_2.jpg"
+              alt="Растение"
+            />
+            <img class="image" src="./assets/images/image_3.jpg" alt="Море" />
+            <img class="image" src="./assets/images/image_4.jpg" alt="Поле" />
+          </div>
+          <div class="gallery__buttons">
+            <button class="prev">Назад</button>
+            <button class="next">Вперед</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>
