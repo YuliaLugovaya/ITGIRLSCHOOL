@@ -83,6 +83,7 @@ a {
     transition: 0.5s;
     margin-top: 5vh;
     margin-bottom: 5vh;
+    background: #FFFFFF;
 }
 
 .form__item {

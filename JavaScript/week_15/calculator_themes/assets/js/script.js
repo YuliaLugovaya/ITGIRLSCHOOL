@@ -1,3 +1,20 @@
+//themes
+
+function changeTheme(){
+  if(document.querySelector('#theme').value == "white")
+  document.body.style.background = "#FFFFFF";
+  if(document.querySelector('#theme').value == "dark")
+  document.body.style.background = "#303030";
+  if(document.querySelector('#theme').value == "beidge")
+  document.body.style.background = "rgb(254, 252, 229)";
+}
+
+
+
+
+
+
+
 //calculator
 
 function addition(){
