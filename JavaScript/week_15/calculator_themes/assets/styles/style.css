@@ -104,6 +104,7 @@ a {
     border-radius: 20px;
     color: #FFFFFF;
     cursor: pointer;
+    transition: 0.5s;
 
 }
 
