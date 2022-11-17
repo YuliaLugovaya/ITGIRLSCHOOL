@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/styles/normalize.css" />
+    <link rel="stylesheet" href="./assets/styles/style.css" />
+    <title>Неделя 15 - калькулятор и темы</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__container">
+          <h1 class="header__item header__item_title">
+            Практические задания Недели 15
+          </h1>
+          <div class="header__item">
+            <a class="header__link" href="#form">Форма регистрации</a>
+            <a class="header__link" href="#calculator">Калькулятор</a>
+          </div>
+          <div class="header__item">
+            <form action="#">
+              <div>
+                <label for="theme">Выберите тему:</label>
+                <select name="theme" id="theme">
+                  <option value="white">Белая</option>
+                  <option value="dark">Темная</option>
+                  <option value="beidge">Бежевая</option>
+                </select>
+              </div>
+            </form>
+          </div>
+        </div>
+      </header>
+
+      <div class="blocks">
+        <div class="form" id="form">
+          <h2 class="form__title">Добро пожаловать в Pinterest</h2>
+          <p class="form__text">Находите новые идеи для вдохновения</p>
+          <form action="#">
+            <div class="form__item">
+              <label for="email">Адрес электронной почты</label>
+              <div>
+                <input
+                  class="form__field"
+                  type="email"
+                  id="email"
+                  placeholder="Введите адрес эл. почты"
+                />
+              </div>
+            </div>
+            <div class="form__item">
+              <label for="password">Пароль</label>
+              <div>
+                <input
+                  class="form__field"
+                  type="password"
+                  id="password"
+                  placeholder="Создайте пароль"
+                />
+              </div>
+            </div>
+            <div class="form__item">
+              <label for="age">Возраст</label>
+              <div>
+                <input
+                  class="form__field"
+                  type="text"
+                  id="age"
+                  placeholder="Возраст"
+                />
+              </div>
+            </div>
+            <div class="form__item form__item_button">
+              <input class="form__button" type="submit" value="Продолжить" />
+            </div>
+          </form>
+          <div class="form__footer">
+            <p class="form__policy">
+              Продолжая, вы соглашаетесь с положениями основных документов
+              Pinterest. Это
+              <a class="form__link" href="#">Условия предоставления услуг</a> и
+              <a class="form__link" href="#">Политика конфиденциальности</a>
+            </p>
+            <p class="form__policy">
+              <a class="form__link" href="#">Уже есть аккаунт? Войти</a>
+            </p>
+          </div>
+        </div>
+
+        <div class="calculator" id="calculator">
+          <h2 class="subtitle">Калькулятор</h2>
+          <p>Число 1: <input type="text" id="number1" /></p>
+          <p>Число 2: <input type="text" id="number2" /></p>
+
+          <div>
+            <button class="calculator__button" onclick="addition()">
+              &#43;
+            </button>
+            <button class="calculator__button" onclick="subtraction()">
+              &#8722;
+            </button>
+            <button class="calculator__button" onclick="multiplication()">
+              &#215;
+            </button>
+            <button class="calculator__button" onclick="division()">
+              &#247;
+            </button>
+          </div>
+          <div>
+            <p id="result">Результат:</p>
+          </div>
+          <button class="message__button" onclick="getReset()">
+            Сбросить значения
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>
