@@ -35,91 +35,104 @@
       </header>
 
       <div class="blocks">
-        <div class="form" id="form">
-          <h2 class="form__title">Добро пожаловать в Pinterest</h2>
-          <p class="form__text">Находите новые идеи для вдохновения</p>
-          <form action="#">
-            <div class="form__item">
-              <label for="name">Имя</label>
-              <div>
-                <input
-                  class="form__field"
-                  type="text"
-                  id="name"
-                  placeholder="Введите имя"
-                />
+        <div class="form">
+          <div id="form">
+            <h2 class="form__title">Добро пожаловать в Pinterest</h2>
+            <p class="form__text">Находите новые идеи для вдохновения</p>
+            <form action="#">
+              <div class="form__item">
+                <label for="name">Имя</label>
+                <div>
+                  <input
+                    class="form__field"
+                    type="text"
+                    id="name"
+                    placeholder="Введите имя"
+                  />
+                </div>
               </div>
-            </div>
-            <div class="form__item">
-              <label for="login">Логин</label>
-              <div>
-                <input
-                  class="form__field"
-                  type="text"
-                  id="login"
-                  placeholder="Придумайте логин"
-                />
+              <div id="errorName"></div>
+              <div class="form__item">
+                <label for="login">Логин</label>
+                <div>
+                  <input
+                    class="form__field"
+                    type="text"
+                    id="login"
+                    placeholder="Придумайте логин"
+                  />
+                </div>
               </div>
-            </div>
-            <div class="form__item">
-              <label for="email">Адрес электронной почты</label>
-              <div>
-                <input
-                  class="form__field"
-                  type="email"
-                  id="email"
-                  placeholder="Введите адрес эл. почты"
-                />
+              <div id="errorLogin"></div>
+              <div class="form__item">
+                <label for="email">Адрес электронной почты</label>
+                <div>
+                  <input
+                    class="form__field"
+                    type="email"
+                    id="email"
+                    placeholder="Введите адрес эл. почты"
+                  />
+                </div>
               </div>
-            </div>
-            <div class="form__item">
-              <label for="password">Пароль</label>
-              <div>
-                <input
-                  class="form__field"
-                  type="password"
-                  id="password"
-                  placeholder="Создайте пароль"
-                />
+              <div id="errorEmail"></div>
+              <div class="form__item">
+                <label for="password">Пароль</label>
+                <div>
+                  <input
+                    class="form__field"
+                    type="password"
+                    id="password"
+                    placeholder="Создайте пароль"
+                  />
+                </div>
               </div>
-            </div>
-            <div class="form__item">
-              <label for="tel">Номер телефона</label>
-              <div>
-                <input
-                  class="form__field"
-                  type="tel"
-                  id="tel"
-                  placeholder="Введите номер телефона"
-                />
+              <div id="errorPassword"></div>
+              <div class="form__item">
+                <label for="tel">Номер телефона</label>
+                <div>
+                  <input
+                    class="form__field"
+                    type="tel"
+                    id="tel"
+                    placeholder="Введите номер телефона"
+                  />
+                </div>
               </div>
-            </div>
-            <div class="form__item">
-              <label for="age">Возраст</label>
-              <div>
-                <input
-                  class="form__field"
-                  type="text"
-                  id="age"
-                  placeholder="Возраст"
-                />
+              <div id="errorTel"></div>
+              <div class="form__item">
+                <label for="age">Возраст</label>
+                <div>
+                  <input
+                    class="form__field"
+                    type="text"
+                    id="age"
+                    placeholder="Возраст"
+                  />
+                </div>
               </div>
+              <div id="errorAge"></div>
+              <div class="form__item form__item_button">
+                <button class="form__button" type="submit" onclick="check()">
+                  Продолжить
+                </button>
+              </div>
+            </form>
+
+            <div class="form__footer">
+              <p class="form__policy">
+                Продолжая, вы соглашаетесь с положениями основных документов
+                Pinterest. Это
+                <a class="form__link" href="#">Условия предоставления услуг</a>
+                и
+                <a class="form__link" href="#">Политика конфиденциальности</a>
+              </p>
+              <p class="form__policy">
+                <a class="form__link" href="#">Уже есть аккаунт? Войти</a>
+              </p>
             </div>
-            <div class="form__item form__item_button">
-              <input class="form__button" type="submit" value="Продолжить" />
-            </div>
-          </form>
-          <div class="form__footer">
-            <p class="form__policy">
-              Продолжая, вы соглашаетесь с положениями основных документов
-              Pinterest. Это
-              <a class="form__link" href="#">Условия предоставления услуг</a> и
-              <a class="form__link" href="#">Политика конфиденциальности</a>
-            </p>
-            <p class="form__policy">
-              <a class="form__link" href="#">Уже есть аккаунт? Войти</a>
-            </p>
           </div>
+          <div id="hello"></div>
         </div>
 
         <div class="calculator" id="calculator">
