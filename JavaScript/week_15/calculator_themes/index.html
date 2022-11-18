@@ -21,8 +21,8 @@
           </div>
           <div class="header__item">
             <form action="#">
-              <div>
-                <label for="theme">Выберите тему:</label>
+              <div class="themes">
+                <label class="themes__title" for="theme">Выберите тему:</label>
                 <select name="theme" id="theme" onchange="changeTheme()">
                   <option selected="selected" value="white">Белая</option>
                   <option value="dark">Темная</option>
@@ -36,7 +36,7 @@
 
       <div class="blocks">
         <div class="form">
-          <div id="form">
+          <div class="form__container">
             <h2 class="form__title">Добро пожаловать в Pinterest</h2>
             <p class="form__text">Находите новые идеи для вдохновения</p>
             <form action="#">
@@ -113,9 +113,7 @@
               </div>
               <div id="errorAge"></div>
               <div class="form__item form__item_button">
-                <button class="form__button" type="submit" onclick="check()">
-                  Продолжить
-                </button>
+                <button class="form__button" type="submit">Продолжить</button>
               </div>
             </form>
 
@@ -132,7 +130,7 @@
               </p>
             </div>
           </div>
-          <div id="hello"></div>
+          <div class="hello"></div>
         </div>
 
         <div class="calculator" id="calculator">
