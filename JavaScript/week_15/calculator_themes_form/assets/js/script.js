@@ -11,7 +11,7 @@ function changeTheme(){
     document.querySelector('.header').style.backgroundColor = "#303030";
   }
   
-  if(document.querySelector('#theme').value == "beidge"){
+  if(document.querySelector('#theme').value == "beige"){
     document.body.style.background = "rgb(253, 252, 240)";
     document.querySelector('.header').style.backgroundColor = "rgb(255, 244, 215)";
   }
