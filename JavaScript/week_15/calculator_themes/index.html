@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/styles/normalize.css" />
     <link rel="stylesheet" href="./assets/styles/style.css" />
-    <title>Неделя 15 - калькулятор и темы</title>
+    <title>Неделя 15 - темы, форма, калькулятор</title>
   </head>
   <body>
     <div class="wrapper">
@@ -23,10 +23,21 @@
             <form action="#">
               <div class="themes">
                 <label class="themes__title" for="theme">Выберите тему:</label>
-                <select name="theme" id="theme" onchange="changeTheme()">
-                  <option selected="selected" value="white">Белая</option>
-                  <option value="dark">Темная</option>
-                  <option value="beidge">Бежевая</option>
+                <select
+                  name="theme"
+                  class="theme"
+                  id="theme"
+                  onchange="changeTheme()"
+                >
+                  <option
+                    class="theme__color"
+                    selected="selected"
+                    value="white"
+                  >
+                    Светлая
+                  </option>
+                  <option class="theme__color" value="dark">Темная</option>
+                  <option class="theme__color" value="beidge">Бежевая</option>
                 </select>
               </div>
             </form>
@@ -42,7 +53,7 @@
             <form action="#">
               <div class="form__item">
                 <label class="form__label" for="name">Имя</label>
-                <div>
+                <div class="form__fields">
                   <input
                     class="form__field"
                     type="text"
@@ -54,7 +65,7 @@
               <div id="errorName"></div>
               <div class="form__item">
                 <label class="form__label" for="login">Логин</label>
-                <div>
+                <div class="form__fields">
                   <input
                     class="form__field"
                     type="text"
@@ -68,7 +79,7 @@
                 <label class="form__label" for="email"
                   >Адрес электронной почты</label
                 >
-                <div>
+                <div class="form__fields">
                   <input
                     class="form__field"
                     type="email"
@@ -80,7 +91,7 @@
               <div id="errorEmail"></div>
               <div class="form__item">
                 <label class="form__label" for="password">Пароль</label>
-                <div>
+                <div class="form__fields">
                   <input
                     class="form__field"
                     type="password"
@@ -92,7 +103,7 @@
               <div id="errorPassword"></div>
               <div class="form__item">
                 <label class="form__label" for="tel">Номер телефона</label>
-                <div>
+                <div class="form__fields">
                   <input
                     class="form__field"
                     type="tel"
@@ -104,7 +115,7 @@
               <div id="errorTel"></div>
               <div class="form__item">
                 <label class="form__label" for="age">Возраст</label>
-                <div>
+                <div class="form__fields">
                   <input
                     class="form__field"
                     type="text"
@@ -137,10 +148,10 @@
 
         <div class="calculator" id="calculator">
           <h2 class="subtitle">Калькулятор</h2>
-          <p>Число 1: <input type="text" id="number1" /></p>
-          <p>Число 2: <input type="text" id="number2" /></p>
+          <p>Число 1: <input class="numbers" type="text" id="number1" /></p>
+          <p>Число 2: <input class="numbers" type="text" id="number2" /></p>
 
-          <div>
+          <div class="calculator__buttons">
             <button class="calculator__button" onclick="addition()">
               &#43;
             </button>
@@ -154,7 +165,7 @@
               &#247;
             </button>
           </div>
-          <div>
+          <div class="calculator__result">
             <p id="result">Результат:</p>
           </div>
           <button class="message__button" onclick="getReset()">
