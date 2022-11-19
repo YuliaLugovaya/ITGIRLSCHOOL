@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/styles/normalize.css" />
+    <link rel="stylesheet" href="./assets/styles/style.css" />
+    <title>Неделя 15 - темы, форма, калькулятор</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__container">
+          <h1 class="header__item header__item_title">
+            Практические задания Недели 15
+          </h1>
+          <div class="header__item">
+            <a class="header__link" href="#form">Форма регистрации</a>
+            <a class="header__link" href="#calculator">Калькулятор</a>
+          </div>
+          <div class="header__item">
+            <form action="#">
+              <div class="themes">
+                <label class="themes__title" for="theme">Выберите тему:</label>
+                <select
+                  name="theme"
+                  class="theme"
+                  id="theme"
+                  onchange="changeTheme()"
+                >
+                  <option
+                    class="theme__color"
+                    selected="selected"
+                    value="white"
+                  >
+                    Светлая
+                  </option>
+                  <option class="theme__color" value="dark">Темная</option>
+                  <option class="theme__color" value="beidge">Бежевая</option>
+                </select>
+              </div>
+            </form>
+          </div>
+        </div>
+      </header>
+
+      <div class="blocks">
+        <div class="form">
+          <div class="form__container">
+            <h2 class="form__title">Добро пожаловать в Pinterest</h2>
+            <p class="form__text">Находите новые идеи для вдохновения</p>
+            <form action="#">
+              <div class="form__item">
+                <label class="form__label" for="name">Имя</label>
+                <div class="form__fields">
+                  <input
+                    class="form__field"
+                    type="text"
+                    id="name"
+                    placeholder="Введите имя"
+                  />
+                </div>
+              </div>
+              <div id="errorName"></div>
+              <div class="form__item">
+                <label class="form__label" for="login">Логин</label>
+                <div class="form__fields">
+                  <input
+                    class="form__field"
+                    type="text"
+                    id="login"
+                    placeholder="Придумайте логин"
+                  />
+                </div>
+              </div>
+              <div id="errorLogin"></div>
+              <div class="form__item">
+                <label class="form__label" for="email"
+                  >Адрес электронной почты</label
+                >
+                <div class="form__fields">
+                  <input
+                    class="form__field"
+                    type="email"
+                    id="email"
+                    placeholder="Введите адрес эл. почты"
+                  />
+                </div>
+              </div>
+              <div id="errorEmail"></div>
+              <div class="form__item">
+                <label class="form__label" for="password">Пароль</label>
+                <div class="form__fields">
+                  <input
+                    class="form__field"
+                    type="password"
+                    id="password"
+                    placeholder="Создайте пароль"
+                  />
+                </div>
+              </div>
+              <div id="errorPassword"></div>
+              <div class="form__item">
+                <label class="form__label" for="tel">Номер телефона</label>
+                <div class="form__fields">
+                  <input
+                    class="form__field"
+                    type="tel"
+                    id="tel"
+                    placeholder="Введите номер телефона"
+                  />
+                </div>
+              </div>
+              <div id="errorTel"></div>
+              <div class="form__item">
+                <label class="form__label" for="age">Возраст</label>
+                <div class="form__fields">
+                  <input
+                    class="form__field"
+                    type="text"
+                    id="age"
+                    placeholder="Возраст"
+                  />
+                </div>
+              </div>
+              <div id="errorAge"></div>
+              <div class="form__item form__item_button">
+                <button class="form__button" type="submit">Продолжить</button>
+              </div>
+            </form>
+
+            <div class="form__footer">
+              <p class="form__policy">
+                Продолжая, вы соглашаетесь с положениями основных документов
+                Pinterest. Это
+                <a class="form__link" href="#">Условия предоставления услуг</a>
+                и
+                <a class="form__link" href="#">Политика конфиденциальности</a>
+              </p>
+              <p class="form__policy">
+                <a class="form__link" href="#">Уже есть аккаунт? Войти</a>
+              </p>
+            </div>
+          </div>
+          <div class="hello"></div>
+        </div>
+
+        <div class="calculator" id="calculator">
+          <h2 class="subtitle">Калькулятор</h2>
+          <p>Число 1: <input class="numbers" type="text" id="number1" /></p>
+          <p>Число 2: <input class="numbers" type="text" id="number2" /></p>
+
+          <div class="calculator__buttons">
+            <button class="calculator__button" onclick="addition()">
+              &#43;
+            </button>
+            <button class="calculator__button" onclick="subtraction()">
+              &#8722;
+            </button>
+            <button class="calculator__button" onclick="multiplication()">
+              &#215;
+            </button>
+            <button class="calculator__button" onclick="division()">
+              &#247;
+            </button>
+          </div>
+          <div class="calculator__result">
+            <p id="result">Результат:</p>
+          </div>
+          <button class="message__button" onclick="getReset()">
+            Сбросить значения
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>

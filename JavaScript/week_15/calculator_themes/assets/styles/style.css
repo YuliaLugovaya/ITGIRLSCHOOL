@@ -1,0 +1,240 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.blocks {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+.subtitle {
+    color: chocolate;
+    text-align: center;
+}
+
+
+
+/*header*/
+
+.header {
+    width: 100%;
+    background: rgb(246, 246, 246);
+}
+
+.header__container {
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+}
+
+.header__link {
+    padding-left: 7px;
+    padding-right: 7px;
+    color: chocolate;
+    font-weight: 700;
+}
+
+.header__link:hover {
+    text-decoration: underline;
+}
+
+.header__item_title {
+    margin-top: 0;
+    margin-bottom: 0;
+    color: chocolate;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.header__item {
+    width: 30vw;
+    text-align: center;
+}
+
+.themes__title {
+    color: chocolate;
+    font-weight: 700;
+}
+
+.theme {
+    outline: none;
+    background: none;
+    border: none;
+    color: chocolate;
+}
+
+.theme__color {
+    background: rgb(255, 243, 235);
+    color: chocolate;
+}
+
+
+
+/*form*/
+
+.form {
+    width: 400px;
+    padding: 5vh;
+    border: 2px solid #acacac;
+    border-radius: 20px;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    background: #FFFFFF;
+}
+
+.form__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.form__item {
+    padding-top: 15px;
+    padding-bottom: 1px;
+}
+
+.form__item_button {
+    display: flex;
+    justify-content: center;
+
+}
+
+.form__button {
+    padding: 1rem;
+    width: 268px;
+    background: red;
+    border: none;
+    border-radius: 20px;
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.form__button:hover {
+    background: rgb(197, 0, 0);
+}
+
+.form__field {
+    width: 232px;
+    padding: 1rem;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border: 2px solid #acacac;
+    border-radius: 20px;
+}
+
+.form__field:focus {
+    outline: none;
+    box-shadow: 0px 0px 0px 5px rgb(165, 229, 245);
+}
+
+.form__policy {
+    text-align: center;
+    color: #656565;
+    font-size: 12px;
+}
+
+.form__footer {
+    width: 250px;
+    margin-top: 2vh;
+}
+
+.form__link {
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.form__label {
+    padding-left: 10px;
+}
+
+#errorName, #errorLogin, #errorEmail, #errorPassword, #errorTel, #errorAge {
+    color: red;
+    font-size: 12px;
+    width: 250px;
+    padding-left: 10px;
+}
+
+.hello {
+    font-size: 1.5rem;
+    text-align: center;
+
+}
+
+
+
+/*calculator*/
+
+.calculator {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5vh;
+    border: 2px solid burlywood;
+    cursor: pointer;
+    transition: 0.5s;
+    background: rgb(255, 244, 215);
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    border-radius: 20px;
+}
+
+.calculator__button {
+    width: 50px;
+    height: 50px;
+    border-radius: 3px;
+    border: none;
+    background: burlywood;
+    cursor: pointer;
+    transition: 0.5s;
+    color: white;
+    font-size: 2rem;
+}
+
+.calculator__button:hover {
+    background: rgb(205, 157, 95);
+}
+
+.message__button {
+    padding: 10px 20px;
+    border-radius: 3px;
+    border: none;
+    background: burlywood;
+    cursor: pointer;
+    transition: 0.5s;
+    color: white;
+}
+
+.message__button:hover {
+    background: rgb(205, 157, 95);
+    
+}
+
+.numbers {
+    border-radius: 3px;
+    border: 2px solid #acacac;
+}
+
+.numbers:focus {
+    outline: none;
+    box-shadow: 0px 0px 0px 2px rgb(205, 157, 95);
+}
