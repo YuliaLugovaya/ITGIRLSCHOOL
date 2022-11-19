@@ -124,9 +124,14 @@ a {
     width: 232px;
     padding: 1rem;
     margin-top: 5px;
+    margin-bottom: 5px;
     border: 2px solid #acacac;
     border-radius: 20px;
-    
+}
+
+.form__field:focus {
+    outline: none;
+    box-shadow: 0px 0px 0px 5px rgb(165, 229, 245);
 }
 
 .form__policy {
@@ -146,10 +151,15 @@ a {
     font-weight: 700;
 }
 
+.form__label {
+    padding-left: 10px;
+}
+
 #errorName, #errorLogin, #errorEmail, #errorPassword, #errorTel, #errorAge {
     color: red;
     font-size: 12px;
     width: 250px;
+    padding-left: 10px;
 }
 
 .hello {
