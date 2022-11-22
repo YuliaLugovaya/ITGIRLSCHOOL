@@ -1,0 +1,103 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    font-size: 1.5rem;
+    color: chocolate;
+    text-align: center;
+}
+
+.subtitle {
+    color: chocolate;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+
+/*calculator*/
+
+.sum {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5vh;
+    border: 2px solid burlywood;
+    transition: 0.5s;
+    background: rgb(255, 244, 215);
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    border-radius: 20px;
+}
+
+.sum__fields {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.button {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 10px 20px;
+    border-radius: 3px;
+    border: none;
+    background: burlywood;
+    cursor: pointer;
+    transition: 0.5s;
+    color: white;
+}
+
+.button:hover {
+    background: rgb(205, 157, 95);
+}
+
+.button_done {
+    background: rgb(89, 152, 93);
+}
+
+.button_done:hover {
+    background: rgb(53, 115, 57);
+}
+
+.number {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 3px;
+    border: 2px solid #acacac;
+}
+
+.number:focus {
+    outline: none;
+    box-shadow: 0px 0px 0px 2px rgb(205, 157, 95);
+}
+
+.numbers {
+    display: flex;
+    flex-direction: column;
+}
+
+.results {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 2px solid #acacac;
+    border-radius: 20px;
+    background-color: white;
+}
+
+.result {
+    text-align: center;
+    font-weight: 700;
+    color: chocolate;
+}
