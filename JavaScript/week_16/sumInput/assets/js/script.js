@@ -33,7 +33,10 @@ function addInput() {
 }
 
 function getReset() {
-  //document.querySelectorAll(".number").value = "";
+  let inputs = document.querySelectorAll(".number");
+  for (let i2 = 0;  i2 < inputs.length; i2++) {
+    inputs[i2].value = '';
+  };
   document.querySelector("#out").innerHTML = "";
   document.querySelector("#sum").innerHTML= "";
 }

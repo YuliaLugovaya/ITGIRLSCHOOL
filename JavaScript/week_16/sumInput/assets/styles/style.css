@@ -67,6 +67,14 @@ body {
     background: rgb(53, 115, 57);
 }
 
+.button_reset {
+    background: rgb(210, 130, 74);
+}
+
+.button_reset:hover {
+    background: chocolate;
+}
+
 .number {
     margin-top: 5px;
     margin-bottom: 5px;
@@ -88,9 +96,9 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 10px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    padding: 10px 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
     border: 2px solid #acacac;
     border-radius: 20px;
     background-color: white;
