@@ -17,24 +17,14 @@
             <div class="item">
               <p class="text">Марка:</p>
               <div class="content">
-                <select name="brand" class="list" id="brand">
-                  <option value="5000" selected>Audi</option>
-                  <option value="10000">Bentley</option>
-                  <option value="5000">BMW</option>
-                  <option value="5000">Mercedes-Benz</option>
-                  <option value="5000">Peugeot</option>
-                  <option value="5000">Toyota</option>
-                  <option value="5000">Volkswagen</option>
-                </select>
-              </div>
-            </div>
-
-            <div class="item">
-              <p class="text">Состояние:</p>
-              <div class="content">
-                <select name="condition" class="list" id="condition">
-                  <option value="45000" selected>Новое</option>
-                  <option value="0">С пробегом</option>
+                <select name="brand" class="list" id="brands">
+                  <option class="brand" id="audi" selected>Audi</option>
+                  <option class="brand" id="bentley">Bentley</option>
+                  <option class="brand" id="bmw">BMW</option>
+                  <option class="brand" id="mercedes">Mercedes-Benz</option>
+                  <option class="brand" id="peugeot">Peugeot</option>
+                  <option class="brand" id="toyota">Toyota</option>
+                  <option class="brand" id="volkswagen">Volkswagen</option>
                 </select>
               </div>
             </div>
@@ -46,15 +36,15 @@
                   type="radio"
                   id="gasoline"
                   name="fuel"
-                  value="0"
+                  class="fuel"
                   checked
                 />
                 <label for="gasoline">Бензин</label>
 
-                <input type="radio" id="diesel" name="fuel" value="1000" />
+                <input type="radio" id="diesel" name="fuel" class="fuel" />
                 <label for="diesel">Дизель</label>
 
-                <input type="radio" id="electro" name="fuel" value="5000" />
+                <input type="radio" id="electro" name="fuel" class="fuel" />
                 <label for="electro">Электро</label>
               </div>
             </div>
@@ -65,11 +55,16 @@
                 <div class="age">
                   <input
                     type="radio"
-                    id="underThree"
+                    id="fresh"
                     name="age"
-                    value="5000"
+                    class="year"
                     checked
                   />
+                  <label for="under-three">Новый</label>
+                </div>
+
+                <div class="age">
+                  <input type="radio" id="underThree" name="age" class="year" />
                   <label for="under-three">Меньше 3 лет</label>
                 </div>
 
@@ -78,7 +73,7 @@
                     type="radio"
                     id="threeToFive"
                     name="age"
-                    value="3000"
+                    class="year"
                   />
                   <label for="threeToFive">От 3 до 5 лет</label>
                 </div>
@@ -88,13 +83,13 @@
                     type="radio"
                     id="fiveToSeven"
                     name="age"
-                    value="2000"
+                    class="year"
                   />
                   <label for="fiveToSeven">От 5 до 7 лет</label>
                 </div>
 
                 <div class="age">
-                  <input type="radio" id="overSeven" name="age" value="0" />
+                  <input type="radio" id="overSeven" name="age" class="year" />
                   <label for="overSeven">Больше 7 лет</label>
                 </div>
               </div>
@@ -103,8 +98,15 @@
             <div class="item">
               <p class="text">Пробег:</p>
               <div class="content">
-                <input type="text" id="mileage" placeholder="км" />
+                <input
+                  required
+                  class="mileage"
+                  type="text"
+                  id="mileage"
+                  placeholder="50000 км"
+                />
               </div>
+              <div class="mileage__alarm"></div>
             </div>
 
             <div class="item">
@@ -115,7 +117,7 @@
                     type="checkbox"
                     id="conditioner"
                     name="conditioner"
-                    value="1000"
+                    class="more"
                   />
                   <label for="conditioner">Кондиционер</label>
                 </div>
@@ -125,7 +127,7 @@
                     type="checkbox"
                     id="parktronic"
                     name="parktronic"
-                    value="1000"
+                    class="more"
                   />
                   <label for="parktronic">Парктроники</label>
                 </div>
@@ -135,13 +137,13 @@
                     type="checkbox"
                     id="climate"
                     name="climate"
-                    value="1000"
+                    class="more"
                   />
                   <label for="climate">Климат-контроль</label>
                 </div>
 
                 <div class="more">
-                  <input type="checkbox" id="alarm" name="alarm" value="1000" />
+                  <input type="checkbox" id="alarm" name="alarm" class="more" />
                   <label for="alarm">Сигнализация</label>
                 </div>
 
@@ -150,7 +152,7 @@
                     type="checkbox"
                     id="heating"
                     name="heating"
-                    value="1000"
+                    class="more"
                   />
                   <label for="heating">Обогрев сидений</label>
                 </div>
@@ -164,7 +166,7 @@
                   type="radio"
                   id="automat"
                   name="transmission"
-                  value="1000"
+                  class="transmission"
                   checked
                 />
                 <label for="automat">Автомат</label>
@@ -173,13 +175,13 @@
                   type="radio"
                   id="mechanics"
                   name="transmission"
-                  value="0"
+                  class="transmission"
                 />
                 <label for="mechanics">Механика</label>
               </div>
             </div>
             <div class="btn">
-              <button type="button" class="button" onclick="getPrice()">
+              <button type="button" class="button" onclick="getSum()">
                 Получить рассчет
               </button>
               <div class="result"></div>
