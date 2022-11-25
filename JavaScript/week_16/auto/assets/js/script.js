@@ -78,6 +78,7 @@ if(mileage <= 50000){
     km = 0;
 }
 
+
 if (conditioner.checked){ 
     more = 1000; }
 if (parktronic.checked){ 
