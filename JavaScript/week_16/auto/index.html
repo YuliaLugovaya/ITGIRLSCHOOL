@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/styles/normalize.css" />
+    <link rel="stylesheet" href="./assets/styles/style.css" />
+    <title>Неделя 16 - калькулятор авто</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="price">
+        <h2 class="subtitle">Калькулятор стоимости автомобиля</h2>
+        <form action="#">
+          <div class="calculation">
+            <div class="item">
+              <p class="text">Марка:</p>
+              <div class="content">
+                <select name="brand" class="list" id="brands">
+                  <option class="brand" id="audi" selected>Audi</option>
+                  <option class="brand" id="bentley">Bentley</option>
+                  <option class="brand" id="bmw">BMW</option>
+                  <option class="brand" id="mercedes">Mercedes-Benz</option>
+                  <option class="brand" id="peugeot">Peugeot</option>
+                  <option class="brand" id="toyota">Toyota</option>
+                  <option class="brand" id="volkswagen">Volkswagen</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="item">
+              <p class="text">Тип топлива:</p>
+              <div class="content">
+                <input
+                  type="radio"
+                  id="gasoline"
+                  name="fuel"
+                  class="fuel"
+                  checked
+                />
+                <label for="gasoline">Бензин</label>
+
+                <input type="radio" id="diesel" name="fuel" class="fuel" />
+                <label for="diesel">Дизель</label>
+
+                <input type="radio" id="electro" name="fuel" class="fuel" />
+                <label for="electro">Электро</label>
+              </div>
+            </div>
+
+            <div class="item">
+              <p class="text">Возраст автомобиля:</p>
+              <div class="content">
+                <div class="age">
+                  <input
+                    type="radio"
+                    id="fresh"
+                    name="age"
+                    class="year"
+                    checked
+                  />
+                  <label for="under-three">Новый</label>
+                </div>
+
+                <div class="age">
+                  <input type="radio" id="underThree" name="age" class="year" />
+                  <label for="under-three">Меньше 3 лет</label>
+                </div>
+
+                <div class="age">
+                  <input
+                    type="radio"
+                    id="threeToFive"
+                    name="age"
+                    class="year"
+                  />
+                  <label for="threeToFive">От 3 до 5 лет</label>
+                </div>
+
+                <div class="age">
+                  <input
+                    type="radio"
+                    id="fiveToSeven"
+                    name="age"
+                    class="year"
+                  />
+                  <label for="fiveToSeven">От 5 до 7 лет</label>
+                </div>
+
+                <div class="age">
+                  <input type="radio" id="overSeven" name="age" class="year" />
+                  <label for="overSeven">Больше 7 лет</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="item">
+              <p class="text">Пробег, км:</p>
+              <div class="content">
+                <input
+                  required
+                  class="mileage"
+                  type="text"
+                  id="mileage"
+                  placeholder="50000"
+                />
+              </div>
+              <div class="mileage__alarm"></div>
+            </div>
+
+            <div class="item">
+              <p class="text">Дополнительно:</p>
+              <div class="content">
+                <div class="more">
+                  <input
+                    type="checkbox"
+                    id="conditioner"
+                    name="conditioner"
+                    class="more"
+                  />
+                  <label for="conditioner">Кондиционер</label>
+                </div>
+
+                <div class="more">
+                  <input
+                    type="checkbox"
+                    id="parktronic"
+                    name="parktronic"
+                    class="more"
+                  />
+                  <label for="parktronic">Парктроники</label>
+                </div>
+
+                <div class="more">
+                  <input
+                    type="checkbox"
+                    id="climate"
+                    name="climate"
+                    class="more"
+                  />
+                  <label for="climate">Климат-контроль</label>
+                </div>
+
+                <div class="more">
+                  <input type="checkbox" id="alarm" name="alarm" class="more" />
+                  <label for="alarm">Сигнализация</label>
+                </div>
+
+                <div class="more">
+                  <input
+                    type="checkbox"
+                    id="heating"
+                    name="heating"
+                    class="more"
+                  />
+                  <label for="heating">Обогрев сидений</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="item">
+              <p class="text">Коробка передач:</p>
+              <div class="content">
+                <input
+                  type="radio"
+                  id="automat"
+                  name="transmission"
+                  class="transmission"
+                  checked
+                />
+                <label for="automat">Автомат</label>
+
+                <input
+                  type="radio"
+                  id="mechanics"
+                  name="transmission"
+                  class="transmission"
+                />
+                <label for="mechanics">Механика</label>
+              </div>
+            </div>
+            <div class="btn">
+              <button type="button" class="button" onclick="getSum()">
+                Получить рассчет
+              </button>
+              <div class="result"></div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>
