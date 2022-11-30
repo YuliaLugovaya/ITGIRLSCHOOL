@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/styles/normalize.css" />
+    <link rel="stylesheet" href="./assets/styles/style.css" />
+    <title>Неделя 17 - ФИО</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1 class="title">Форма регистрации</h1>
+      <div class="form">
+        <div class="form__container form__container_bottom">
+          <form action="#">
+            <div class="form__item">
+              <label class="form__label" for="fio">Фамилия Имя Отчество:</label>
+              <div class="form__fields">
+                <input
+                  class="form__field"
+                  type="text"
+                  id="fio"
+                  placeholder="Введите ФИО"
+                />
+              </div>
+              <button class="form__button" type="submit">Отправить</button>
+              <button class="form__button_reset" type="submit">Сбросить</button>
+            </div>
+            <div id="errorFio"></div>
+          </form>
+        </div>
+
+        <div class="form__container">
+          <form class="form__items" action="#">
+            <div class="form__item">
+              <label class="form__label" for="lastName">Фамилия:</label>
+              <div class="form__fields">
+                <input class="form__field" type="text" id="lastName" disabled />
+              </div>
+            </div>
+
+            <div class="form__item">
+              <label class="form__label" for="name">Имя:</label>
+              <div class="form__fields">
+                <input class="form__field" type="text" id="name" disabled />
+              </div>
+            </div>
+
+            <div class="form__item">
+              <label class="form__label" for="patronymic">Отчество:</label>
+              <div class="form__fields">
+                <input
+                  class="form__field"
+                  type="text"
+                  id="patronymic"
+                  disabled
+                />
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>
