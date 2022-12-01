@@ -28,6 +28,10 @@ body {
     border-radius: 5px;
 }
 
+.item {
+    text-align: center;
+}
+
 .result {
     font-size: 2rem;
     color: rgb(235, 163, 29);
