@@ -6,21 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/styles/normalize.css" />
     <link rel="stylesheet" href="./assets/styles/style.css" />
-    <title>Неделя 17 - анонимные комментарии</title>
+    <title>Неделя 17 - анонимные сообщения</title>
   </head>
   <body>
     <div class="wrapper">
-      <h1 class="title">Анонимные комментарии</h1>
-      <form class="container" action="#">
-        <p>Оставьте ваше сообщение:</p>
+      <h1 class="title">Анонимные сообщения</h1>
+      <div class="container">
+        <p class="text">Привет! Как дела?</p>
+        <div class="field"></div>
         <textarea
           name="textarea"
           class="textarea"
           cols="30"
-          rows="10"
+          rows="5"
+          placeholder="Введите сообщение..."
         ></textarea>
         <button class="button">Отправить</button>
-      </form>
+      </div>
       <div class="result"></div>
     </div>
 

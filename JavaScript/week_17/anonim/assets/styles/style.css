@@ -21,14 +21,29 @@ body {
     align-items: center;
     justify-content: center;
     width: 700px;
-    padding: 30px;
+    margin-bottom: 30px;
 
     border: 2px solid rgb(6, 121, 150);
     border-radius: 5px;
 }
 
+.text {
+    align-self: flex-start;
+    padding: 1rem;
+}
+
+.field {
+    height: 250px;
+    width: 100%;
+    border-top: 2px solid #acacac;
+    border-bottom: 2px solid #acacac;
+    background-color: rgb(240, 255, 255);
+}
+
 .textarea {
-    width: 680px;
+    width: 600px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     border: 2px solid #acacac;
 }
 
