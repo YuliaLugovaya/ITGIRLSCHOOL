@@ -33,7 +33,7 @@ body {
 }
 
 .field {
-    height: 250px;
+    min-height: 250px;
     width: 100%;
     border-top: 2px solid #acacac;
     border-bottom: 2px solid #acacac;
@@ -66,6 +66,17 @@ body {
 
 .button:hover {
     background: rgb(6, 121, 150);
+}
+
+.result {
+    display: inline-block;
+    padding: 0.5rem;
+    margin: 5px 10px;
+
+    background: white;
+    border: 2px solid #acacac;
+    border-radius: 10px;
+    
 }
 
 
