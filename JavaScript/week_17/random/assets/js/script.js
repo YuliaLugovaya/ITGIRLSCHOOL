@@ -7,9 +7,13 @@ function getNumbers() {
     let product = document.querySelector('#product');
     let arr = [];
 
-    for(let i = 0; i < 5; i++){
-        arr.push(Math.trunc(Math.random() * 10 + 1));
-        arr.push(Math.trunc(Math.random() * -10 - 1));
+    for(let i = 0; i < 10; i++){
+        let min = -10;
+        let max = 10;
+        arr.push(Math.floor(Math.random() * (max - min + 1)) + min);
+
+        //arr.push(Math.trunc(Math.random() * 10 + 1));
+        //arr.push(Math.trunc(Math.random() * -10 - 1)); // этот способ позволяет вывести положительные и отрицательные числа поровну
     }
 
     numbers.innerHTML = arr;
