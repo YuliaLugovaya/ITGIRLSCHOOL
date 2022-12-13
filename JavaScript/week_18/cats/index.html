@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/styles/normalize.css" />
+    <link rel="stylesheet" href="./assets/styles/style.css" />
+    <title>Страница-опросник для владельцев котиков</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1 class="title">Страница-опросник для владельцев котиков</h1>
+      <form>
+        <div class="main">
+          <div class="main__item">
+            <input
+              class="field"
+              type="text"
+              name="nominal"
+              id="nickname"
+              placeholder="Напишите кличку питомца"
+              required
+            />*
+          </div>
+          <div class="main__item">
+            <input
+              class="field"
+              type="text"
+              name="nominal"
+              id="name"
+              placeholder="Напишите свое имя"
+              required
+            />*
+          </div>
+          <div class="main__item">
+            <input
+              class="field"
+              type="email"
+              name="nominal"
+              id="email"
+              placeholder="Введите ваш email"
+              required
+            />*
+          </div>
+          <div class="main__item">
+            <input
+              class="field"
+              type="tel"
+              name="nominal"
+              id="tel"
+              placeholder="Введите номер телефона"
+              pattern="^(\+375|80)(29|25|44|33)(\d{3})(\d{2})(\d{2})$"
+              required
+            />*
+          </div>
+          <div class="notes">
+            <div class="notes__items">
+              <p class="notes__item">Допустимые форматы номера телефона:</p>
+              <p class="notes__item">
+                +375<span class="code">??</span
+                ><span class="number">*******</span> или +375<span class="code"
+                  >??</span
+                ><span class="number">*******</span>
+              </p>
+            </div>
+            <div class="notes__items">
+              <p class="notes__item">
+                <span class="code">??</span> - код мобильного оператора (29 / 25
+                / 44 / 33)
+              </p>
+              <p class="notes__item">
+                <span class="number">*******</span> - номер телефона из 7 цифр
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <p class="subtitle">Выберите породу</p>
+          <select>
+            <option value="1" selected="selected">Метис</option>
+            <option value="2">Абиссинская</option>
+            <option value="3">Австралийский мист</option>
+            <option value="4">Азиатская (табби)</option>
+            <option value="5">Американский бобтейл</option>
+            <option value="6">Американская</option>
+            <option value="7">Американский кёрл</option>
+            <option value="8">Анатолийская</option>
+            <option value="9">Аравийский мау</option>
+            <option value="10">Балинезийская</option>
+            <option value="11">Бенгальская</option>
+            <option value="12">Бомбейская</option>
+            <option value="13">Бразильская</option>
+            <option value="14">Британская</option>
+            <option value="15">Бурманская</option>
+            <option value="16">Бурмилла</option>
+            <option value="17">Гавана</option>
+            <option value="18">Гималайская</option>
+            <option value="19">Девон рекс</option>
+            <option value="20">Донской сфинкс</option>
+            <option value="21">Кельтская</option>
+            <option value="22">Египетская мау</option>
+            <option value="23">Йорк</option>
+            <option value="24">Калифорнийская сияющая</option>
+            <option value="25">Канаани</option>
+            <option value="26">Карельский бобтейл</option>
+            <option value="27">Кимрик</option>
+            <option value="28">Корат</option>
+            <option value="29">Корниш рекс</option>
+            <option value="30">Курильский бобтейл</option>
+            <option value="31">Лаперм</option>
+            <option value="32">Манчкин</option>
+            <option value="33">Мейн-кун</option>
+            <option value="34">Меконгский бобтейл</option>
+            <option value="35">Минскин</option>
+            <option value="36">Мэнкс (Мэнская кошка)</option>
+            <option value="37">Наполеон</option>
+            <option value="38">Немецкий рекс</option>
+            <option value="39">Нибелунг</option>
+            <option value="40">Норвежская лесная</option>
+            <option value="41">Орегон-рекс</option>
+            <option value="42">Ориентальная</option>
+            <option value="43">Охос азулес</option>
+            <option value="44">Оцикет</option>
+            <option value="45">Персидская</option>
+            <option value="46">Колорпойнт</option>
+            <option value="47">Петерболд</option>
+            <option value="48">Пиксибоб</option>
+            <option value="49">Рагамаффин</option>
+            <option value="50">Русская голубая</option>
+            <option value="51">Рэгдолл</option>
+            <option value="52">Саванна</option>
+            <option value="53">Священная бирманская</option>
+            <option value="54">Сейшельская</option>
+            <option value="55">Селкирк рекс</option>
+            <option value="56">Серенгети</option>
+            <option value="57">Сиамская</option>
+            <option value="58">Сибирская</option>
+            <option value="59">Невская маскарадная</option>
+            <option value="60">Сингапурская</option>
+            <option value="61">Скоттиш</option>
+            <option value="62">Сноу-Шу</option>
+            <option value="63">Сококе</option>
+            <option value="64">Сомали</option>
+            <option value="65">Сфинкс</option>
+            <option value="66">Тайская</option>
+            <option value="67">Шантильи-тиффани</option>
+            <option value="68">Тойгер</option>
+            <option value="69">Тонкинская</option>
+            <option value="70">Турецкая ангора</option>
+            <option value="71">Турецкий ван</option>
+            <option value="72">Украинский левкой</option>
+            <option value="73">Уральский рекс</option>
+            <option value="74">Форин Вайт</option>
+            <option value="75">Хайленд фолд</option>
+            <option value="76">Цейлонская</option>
+            <option value="77">Хауси</option>
+            <option value="78">Шартрез</option>
+            <option value="79">Эгейская</option>
+            <option value="80">Экзотическая</option>
+            <option value="81">Яванез (Яванская кошка)</option>
+            <option value="82">Японский бобтейл</option>
+          </select>
+        </div>
+        <div>
+          <p class="subtitle">Чем питается?</p>
+          <input type="checkbox" name="feed" value="1" id="dry" /><label
+            for="dry"
+            >Сухой корм</label
+          ><br />
+          <input type="checkbox" name="feed" value="2" id="wet" /><label
+            for="wet"
+            >Влажный корм</label
+          ><br />
+          <input type="checkbox" name="feed" value="3" id="natural" /><label
+            for="natural"
+            >Натуральный корм</label
+          >
+        </div>
+        <div>
+          <p class="subtitle">Пол питомца</p>
+          <input type="radio" name="sex" value="m" /><span>Самец</span> <br />
+          <input type="radio" name="sex" value="f" /><span>Самка</span>
+        </div>
+        <div>
+          <p class="subtitle">Комментарий</p>
+          <textarea
+            class="textarea"
+            name="comment"
+            id="comment"
+            cols="30"
+            rows="10"
+            placeholder="Если хотите добавить что-то важное, можно написать здесь"
+          ></textarea>
+        </div>
+        <div>
+          <p>Можете добавить фотографию питомца</p>
+          <input type="file" />
+        </div>
+        <div>
+          <button class="button">Сохранить</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
