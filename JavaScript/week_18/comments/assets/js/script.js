@@ -22,13 +22,8 @@ function checkSpam() {
 
 function checkMessage () {
     let personValue = person.value;
-    let messageValue = newMessage.value;
-
     if(localStorage.getItem('name') === null){
         localStorage.setItem('name', personValue);
-    }
-    if(localStorage.getItem('comment') === null){
-        localStorage.setItem('comment', messageValue);
     }
 }
 

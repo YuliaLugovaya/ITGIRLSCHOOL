@@ -10,7 +10,24 @@
   </head>
   <body>
     <div class="wrapper">
-      <h1>Заголовок</h1>
+      <h1 class="title">Мои заметки</h1>
+      <div class="container">
+        <textarea
+          name="textarea"
+          class="textarea"
+          cols="30"
+          rows="10"
+          placeholder="Введите сообщение..."
+          maxlength="650"
+          required
+        ></textarea>
+        <div class="error"></div>
+        <input type="date" onchange="onDateChange()" class="date" />
+        <button class="btn">Добавить заметку</button>
+        <div class="result"></div>
+      </div>
     </div>
+
+    <script src="./assets/js/script.js"></script>
   </body>
 </html>
