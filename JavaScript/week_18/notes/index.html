@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/styles/normalize.css" />
+    <link rel="stylesheet" href="./assets/styles/style.css" />
+    <title>Заметки</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1 class="title">Мои заметки</h1>
+      <div class="container">
+        <textarea
+          name="textarea"
+          class="textarea"
+          cols="30"
+          rows="10"
+          placeholder="Введите сообщение..."
+          maxlength="650"
+          required
+        ></textarea>
+        <div class="error"></div>
+        <input type="date" onchange="onDateChange()" class="date" />
+        <div class="buttons">
+          <button class="btn">Добавить заметку</button>
+          <button class="btn__remove">Удалить все заметки</button>
+        </div>
+
+        <div class="result"></div>
+      </div>
+    </div>
+
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>

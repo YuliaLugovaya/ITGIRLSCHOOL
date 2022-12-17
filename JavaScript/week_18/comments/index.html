@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/styles/normalize.css" />
+    <link rel="stylesheet" href="./assets/styles/style.css" />
+    <title>Комментарии</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1>Комментарии</h1>
+      <div class="container">
+        <div class="container__info">
+          <h2 class="details">Персональные данные</h2>
+          <div class="info">
+            <div class="avatars">
+              <p class="avatar__change">Выберите аватар:</p>
+              <div class="avatars__items">
+                <img
+                  class="avatar"
+                  id="woman"
+                  src="https://cdn-icons-png.flaticon.com/512/949/949635.png"
+                  alt="Woman"
+                  onclick="selectWoman()"
+                />
+                <img
+                  class="avatar"
+                  id="men"
+                  src="https://cdn-icons-png.flaticon.com/512/4440/4440953.png"
+                  alt="Men"
+                  onclick="selectMen()"
+                />
+              </div>
+            </div>
+            <div class="name">
+              <p class="add__name">Введите Ваше имя:</p>
+              <input
+                class="person"
+                type="text"
+                name="person"
+                id="person"
+                placeholder="Меня зовут..."
+              />
+              <button class="save">Сохранить имя</button>
+            </div>
+            <div class="buttons">
+              <button class="remove">Удалить данные</button>
+            </div>
+          </div>
+        </div>
+        <div class="field"></div>
+
+        <textarea
+          name="textarea"
+          class="textarea"
+          cols="30"
+          rows="5"
+          placeholder="Введите сообщение..."
+          required
+        ></textarea>
+        <div class="error"></div>
+        <div>
+          <button class="button">Отправить</button>
+          <button class="button__remove">Удалить сообщения</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>
