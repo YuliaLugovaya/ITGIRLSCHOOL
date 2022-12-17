@@ -21,21 +21,6 @@ a {
     padding-top: 20px;
 }
 
-.btn {
-    margin: 10px;
-    padding: 1rem;
-    background: rgb(69, 167, 69);
-    border: none;
-    border-radius: 5px;
-    color: #FFFFFF;
-    cursor: pointer;
-    transition: 0.5s;
-}
-
-.btn:hover {
-    background: rgb(24, 114, 24);
-}
-
 .container {
     display: flex;
     flex-direction: column;
@@ -77,16 +62,66 @@ a {
 }
 
 .result__item {
+    display: flex;
+    justify-content: space-between;
     margin: 10px;
-}
-
-.note {
-    width: 600px;
     border: 2px solid #acacac;
-    margin: 5px;
+    width: 600px;
+    padding: 10px;
 }
 
 .error {
     padding: 10px;
     color: red;
+}
+
+.buttons {
+    display: flex;
+}
+
+.btn {
+    width: 190px;
+    margin: 10px;
+    padding: 1rem;
+    background: rgb(69, 167, 69);
+    border: none;
+    border-radius: 5px;
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.btn:hover {
+    background: rgb(24, 114, 24);
+}
+
+.btn__remove {
+    width: 190px;
+    margin: 10px;
+    padding: 1rem;
+    background: #acacac;
+    border: none;
+    border-radius: 5px;
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.btn__remove:hover {
+    background: #6d6d6d;
+}
+
+.remove {
+    margin: 10px;
+    padding: 5px 10px;
+    background: #acacac;
+    border: none;
+    border-radius: 5px;
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.remove:hover {
+    background: #696969;
 }

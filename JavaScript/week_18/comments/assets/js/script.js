@@ -9,12 +9,12 @@ let btn = document.querySelector(".button");
 let savedMessages = JSON.parse(localStorage.getItem("messages")) || [];
 savedMessages.forEach(addDivItem);
 
-//добавить сообщение
+//запись результата
 function addDivItem(displayedMessage) {
     result.innerHTML += `<div class="note"><p class="result__item">${displayedMessage}</p></div>`;
 }
 
-//вызов функции Добавить сообщение и проверка на спам и валидность
+//добавление сообщения, проверка на спам и валидность
 btn.addEventListener("click", () => {
     let newMessageValue = newMessage.value;
     personValue = person.value;
