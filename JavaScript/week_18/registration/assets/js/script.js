@@ -78,7 +78,7 @@ function checkValidityTel() {
   let validity = tel.validity;
 
   if(validity.valueMissing) {
-    errorTel.innerHTML = 'Вы забыли придумать пароль.';
+    errorTel.innerHTML = 'Вы забыли ввести номер телефона.';
     tel.style.border = '2px solid rgb(197, 0, 0)';
   } else if (validity.patternMismatch){
     errorTel.innerHTML = 'Допустимые форматы номера телефона: +375XX******* или 80XX*******, где XX - код мобильного оператора (29 / 25 / 44 / 33), а ******* - номер телефона из 7 цифр.';
