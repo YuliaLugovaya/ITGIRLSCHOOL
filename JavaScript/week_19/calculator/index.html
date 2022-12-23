@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/styles/normalize.css" />
+    <link rel="stylesheet" href="./assets/styles/style.css" />
+    <title>Калькулятор</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1>Калькулятор</h1>
+      <div class="calculator" id="calculator">
+        <h2 class="subtitle">Калькулятор</h2>
+        <p>Число 1: <input class="numbers" type="text" id="number1" /></p>
+        <p>Число 2: <input class="numbers" type="text" id="number2" /></p>
+
+        <div class="calculator__buttons">
+          <button class="calculator__button" id="addition">&#43;</button>
+          <button class="calculator__button" id="subtraction">&#8722;</button>
+          <button class="calculator__button" id="multiplication">&#215;</button>
+          <button class="calculator__button" id="division">&#247;</button>
+        </div>
+        <div class="calculator__result">
+          <p id="result">Результат:</p>
+        </div>
+        <button class="message__button" onclick="getReset()">
+          Сбросить значения
+        </button>
+      </div>
+    </div>
+
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>

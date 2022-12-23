@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/styles/normalize.css" />
+    <link rel="stylesheet" href="./assets/styles/style.css" />
+    <title>Опросник владельцев кошек</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1>Опросник</h1>
+      <form action="#">
+        <div class="main">
+          <div class="main__item">
+            <input
+              class="field"
+              type="text"
+              name="nominal"
+              id="nickname"
+              placeholder="Напишите кличку питомца"
+              required
+            />*
+          </div>
+          <div class="main__item">
+            <input
+              class="field"
+              type="text"
+              name="nominal"
+              id="name"
+              placeholder="Напишите свое имя"
+              required
+            />*
+          </div>
+          <div class="main__item">
+            <input
+              class="field"
+              type="email"
+              name="nominal"
+              id="email"
+              placeholder="Введите ваш email"
+              required
+            />*
+          </div>
+          <div class="main__item">
+            <input
+              class="field"
+              type="tel"
+              name="nominal"
+              id="tel"
+              placeholder="Введите номер телефона"
+              pattern="^(\+375|80)(29|25|44|33)(\d{3})(\d{2})(\d{2})$"
+              required
+            />*
+          </div>
+          <div class="notes">
+            <div class="notes__items">
+              <p class="notes__item">Допустимые форматы номера телефона:</p>
+              <p class="notes__item">
+                +375<span class="code">XX</span
+                ><span class="number">*******</span> или 80<span class="code"
+                  >XX</span
+                ><span class="number">*******</span>
+              </p>
+            </div>
+            <div class="notes__items">
+              <p class="notes__item">
+                <span class="code">XX</span> - код мобильного оператора (29 / 25
+                / 44 / 33)
+              </p>
+              <p class="notes__item">
+                <span class="number">*******</span> - номер телефона из 7 цифр
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <p class="subtitle">Выберите породу</p>
+          <select class="breed">
+            <option value="Метис" selected="selected">Метис</option>
+            <option value="Абиссинская">Абиссинская</option>
+            <option value="Австралийский мист">Австралийский мист</option>
+            <option value="Азиатская (табби)">Азиатская (табби)</option>
+            <option value="Американский бобтейл">Американский бобтейл</option>
+            <option value="Американская">Американская</option>
+            <option value="Американский кёрл">Американский кёрл</option>
+            <option value="Анатолийская">Анатолийская</option>
+            <option value="Аравийский мау">Аравийский мау</option>
+            <option value="Балинезийская">Балинезийская</option>
+            <option value="Бенгальская">Бенгальская</option>
+            <option value="Бомбейская">Бомбейская</option>
+            <option value="Бразильская">Бразильская</option>
+            <option value="Британская">Британская</option>
+            <option value="Бурманская">Бурманская</option>
+          </select>
+        </div>
+        <div>
+          <p class="subtitle">Чем питается?</p>
+          <input
+            type="checkbox"
+            class="food"
+            name="feed"
+            value="Сухой корм"
+            id="dry"
+          /><label for="dry">Сухой корм</label><br />
+          <input
+            type="checkbox"
+            class="food"
+            name="feed"
+            value="Влажный корм"
+            id="wet"
+          /><label for="wet">Влажный корм</label><br />
+          <input
+            type="checkbox"
+            class="food"
+            name="feed"
+            value="Натуральный корм"
+            id="natural"
+          /><label for="natural">Натуральный корм</label>
+        </div>
+        <div>
+          <p class="subtitle">Пол питомца</p>
+          <input type="radio" name="sex" value="Самец" /><span>Самец</span>
+          <br />
+          <input type="radio" name="sex" value="Самка" /><span>Самка</span>
+        </div>
+        <div>
+          <p class="subtitle">Комментарий</p>
+          <textarea
+            class="textarea"
+            name="comment"
+            id="comment"
+            cols="30"
+            rows="5"
+            placeholder="Если хотите добавить что-то важное, можно написать здесь"
+          ></textarea>
+        </div>
+        <div>
+          <label for="file">Можете добавить фотографию питомца</label>
+          <input type="file" id="file" accept="image/jpeg,image/png" />
+        </div>
+        <div>
+          <button class="button">Сохранить</button>
+        </div>
+      </form>
+    </div>
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>
