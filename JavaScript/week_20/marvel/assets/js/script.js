@@ -63,6 +63,7 @@ let json = `[{
     "more": "как и Росомаха из Людей Икс, Дэдпул был подвергнут опытам по программе «Оружие Икс». Ученые попытались исцелить его рак, привив его клеткам способность к регенерации. Как и всегда в комиксах, что-то пошло не так, и Дэдпул остался изуродованным и психически нестабильным. <br><br> Это единственный супергерой из списка, который однозначно не на стороне добра. Дэдпул наслаждается насилием. Первоначально появившись в основной Вселенной Marvel, он получил альтернативные варианты в других реальностях Мультивселенной. Что оставалось неизменным — его циничное, черное чувство юмора: за него Дэдпула прозвали «Болтливым наемником»."
 }]`;
 
+
 document.addEventListener("DOMContentLoaded", function (event) {
     let heroes = JSON.parse(json);
     let heroCard = "";
@@ -78,12 +79,12 @@ document.addEventListener("DOMContentLoaded", function (event) {
         <p class="text"><span class="bold">Суперсилы: </span>${hero.superpower}</p>
         <img src="${hero.image}" alt="" />
         <p class="text"><span class="bold">Подробнее: </span>${hero.more}</p>
-        <div class="name">
-        <p class="add__name">Оцените персонажа:</p>
+        <div class="rating">
+        <p class="rating__character">Оцените персонажа по шкале от 1 до 10:</p>
         <input
-        class="person"
+        class="score"
         type="text"
-        name="person"
+        name="score"
         />
         <button class="save">Сохранить оценку</button>
         </div>
@@ -92,33 +93,29 @@ document.addEventListener("DOMContentLoaded", function (event) {
     }
     document.querySelector(".container").innerHTML = heroCard;
 
-})
+    let result = document.querySelector('.result');
+    let score = document.querySelector('.score');
+    let scoreValue;
+    let save = document.querySelector('.save');
 
-//сохранить имя
+    //localStorage
+    let savedScore = JSON.parse(localStorage.getItem("score")) || [];
+    savedScore.forEach(addScore);
 
-let result = document.querySelector('.result');
-let person = document.querySelector('.person');
-let personValue;
-let addYourName = document.querySelector('.add__name');
-
-let save = document.querySelector('.save');
-save.addEventListener('click', addName);
-
-function addName () {
-    personValue = person.value;
-        if(localStorage.getItem('name') === null){
-            localStorage.setItem('name', personValue);
-            addYourName.style.display = 'none';
-            person.style.border = 'none';
-            save.style.display = 'none';
-    } 
-}
-
-document.addEventListener('DOMContentLoaded', function (event) {
-    if(localStorage.getItem('name') !== null){
-        person.value = localStorage.getItem('name');
-        addYourName.style.display = 'none';
-        person.style.border = 'none';
-        save.style.display = 'none';
+    //запись результата
+    function addScore(displayedScore) {
+        result.innerHTML += `<div class="note"><p class="result__item">Ваша оценка: ${displayedScore}</p></div>`;
     }
+
+    //добавление рейтинга
+    save.addEventListener("click", () => {
+        scoreValue = score.value;
+        let displayedScore = scoreValue;
+        savedScore.push(displayedScore);
+        localStorage.setItem("score", JSON.stringify(savedScore));
+        scoreValue = "";
+        addScore(displayedScore);
+    });
+
 })
+
