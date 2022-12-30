@@ -93,29 +93,146 @@ document.addEventListener("DOMContentLoaded", function (event) {
     }
     document.querySelector(".container").innerHTML = heroCard;
 
-    let result = document.querySelector('.result');
-    let score = document.querySelector('.score');
-    let scoreValue;
-    let save = document.querySelector('.save');
+    let result = document.querySelectorAll('.result');
+    let score = document.querySelectorAll('.score');
+    let save = document.querySelectorAll('.save');
+
+    let ironman;
+    let spiderman;
+    let tor;
+    let capitan;
+    let hulk;
+    let widow;
+    let deadpool;
+    
 
     //localStorage
-    let savedScore = JSON.parse(localStorage.getItem("score")) || [];
-    savedScore.forEach(addScore);
+    let savedScoreIronman = JSON.parse(localStorage.getItem("ironman")) || [];
+    savedScoreIronman.forEach(addScoreIronman);
+
+    let savedScoreSpiderman = JSON.parse(localStorage.getItem("spiderman")) || [];
+    savedScoreSpiderman.forEach(addScoreSpiderman);
+
+    let savedScoreTor = JSON.parse(localStorage.getItem("tor")) || [];
+    savedScoreTor.forEach(addScoreTor);
+
+    let savedScoreCapitan = JSON.parse(localStorage.getItem("capitan")) || [];
+    savedScoreCapitan.forEach(addScoreCapitan);
+
+    let savedScoreHulk = JSON.parse(localStorage.getItem("hulk")) || [];
+    savedScoreHulk.forEach(addScoreHulk);
+
+    let savedScoreWidow = JSON.parse(localStorage.getItem("widow")) || [];
+    savedScoreWidow.forEach(addScoreWidow);
+
+    let savedScoreDeadpool = JSON.parse(localStorage.getItem("deadpool")) || [];
+    savedScoreDeadpool.forEach(addScoreDeadpool);
 
     //запись результата
-    function addScore(displayedScore) {
-        result.innerHTML += `<div class="note"><p class="result__item">Ваша оценка: ${displayedScore}</p></div>`;
+    function addScoreIronman(displayedScoreIronman) {
+        result[0].innerHTML += `<div class="note"><p class="result__item">Ваша оценка: ${displayedScoreIronman}</p></div>`;
+    }
+
+    function addScoreSpiderman(displayedScoreSpiderman) {
+        result[1].innerHTML += `<div class="note"><p class="result__item">Ваша оценка: ${displayedScoreSpiderman}</p></div>`;
+    }
+
+    function addScoreCapitan(displayedScoreCapitan) {
+        result[2].innerHTML += `<div class="note"><p class="result__item">Ваша оценка: ${displayedScoreCapitan}</p></div>`;
+    }
+
+    function addScoreTor(displayedScoreTor) {
+        result[3].innerHTML += `<div class="note"><p class="result__item">Ваша оценка: ${displayedScoreTor}</p></div>`;
+    }
+
+    function addScoreHulk(displayedScoreHulk) {
+        result[4].innerHTML += `<div class="note"><p class="result__item">Ваша оценка: ${displayedScoreHulk}</p></div>`;
+    }
+
+    function addScoreWidow(displayedScoreWidow) {
+        result[5].innerHTML += `<div class="note"><p class="result__item">Ваша оценка: ${displayedScoreWidow}</p></div>`;
+    }
+
+    function addScoreDeadpool(displayedScoreDeadpool) {
+        result[6].innerHTML += `<div class="note"><p class="result__item">Ваша оценка: ${displayedScoreDeadpool}</p></div>`;
     }
 
     //добавление рейтинга
-    save.addEventListener("click", () => {
-        scoreValue = score.value;
-        let displayedScore = scoreValue;
-        savedScore.push(displayedScore);
-        localStorage.setItem("score", JSON.stringify(savedScore));
-        scoreValue = "";
-        addScore(displayedScore);
+    save[0].addEventListener("click", () => {
+        ironman = score[0].value;
+        let displayedScoreIronman = ironman;
+
+        savedScoreIronman.push(displayedScoreIronman);
+        localStorage.setItem("ironman", JSON.stringify(savedScoreIronman));
+        ironman = '';
+
+        addScoreIronman(displayedScoreIronman);
     });
 
+    save[1].addEventListener("click", () => {
+        spiderman = score[1].value;
+        let displayedScoreSpiderman = spiderman;
+
+        savedScoreSpiderman.push(displayedScoreSpiderman);
+        localStorage.setItem("spiderman", JSON.stringify(savedScoreSpiderman));
+        spiderman = '';
+
+        addScoreSpiderman(displayedScoreSpiderman);
+    });
+
+    save[2].addEventListener("click", () => {
+        capitan = score[2].value;
+        let displayedScoreCapitan = capitan;
+
+        savedScoreCapitan.push(displayedScoreCapitan);
+        localStorage.setItem("capitan", JSON.stringify(savedScoreCapitan));
+        capitan = '';
+
+        addScoreCapitan(displayedScoreCapitan);
+    });
+
+    save[3].addEventListener("click", () => {
+        tor = score[3].value;
+        let displayedScoreTor = tor;
+
+        savedScoreTor.push(displayedScoreTor);
+        localStorage.setItem("tor", JSON.stringify(savedScoreTor));
+        tor = '';
+
+        addScoreTor(displayedScoreTor);
+    });
+
+    save[4].addEventListener("click", () => {
+        hulk = score[4].value;
+        let displayedScoreHulk = hulk;
+
+        savedScoreHulk.push(displayedScoreHulk);
+        localStorage.setItem("hulk", JSON.stringify(savedScoreHulk));
+        hulk = '';
+
+        addScoreHulk(displayedScoreHulk);
+    });
+
+    save[5].addEventListener("click", () => {
+        widow = score[5].value;
+        let displayedScoreWidow = widow;
+
+        savedScoreWidow.push(displayedScoreWidow);
+        localStorage.setItem("widow", JSON.stringify(savedScoreWidow));
+        widow = '';
+
+        addScoreWidow(displayedScoreWidow);
+    });
+
+    save[6].addEventListener("click", () => {
+        deadpool = score[6].value;
+        let displayedScoreDeadpool = deadpool;
+
+        savedScoreDeadpool.push(displayedScoreDeadpool);
+        localStorage.setItem("deadpool", JSON.stringify(savedScoreDeadpool));
+        deadpool = '';
+
+        addScoreDeadpool(displayedScoreDeadpool);
+    });
 })
 
