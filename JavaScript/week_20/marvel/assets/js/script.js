@@ -83,8 +83,11 @@ document.addEventListener("DOMContentLoaded", function (event) {
         <p class="rating__character">Оцените персонажа по шкале от 1 до 10:</p>
         <input
         class="score"
-        type="text"
+        type="number"
         name="score"
+        min="1"
+        max="10"
+        value="10"
         />
         <button class="save">Сохранить оценку</button>
         </div>
@@ -131,30 +134,44 @@ document.addEventListener("DOMContentLoaded", function (event) {
     //запись результата
     function addScoreIronman(displayedScoreIronman) {
         result[0].innerHTML += `<div class="note"><p class="result__item">Ваша оценка: ${displayedScoreIronman}</p></div>`;
+        score[0].style.display = 'none';
+        save[0].style.display = 'none';
     }
 
     function addScoreSpiderman(displayedScoreSpiderman) {
         result[1].innerHTML += `<div class="note"><p class="result__item">Ваша оценка: ${displayedScoreSpiderman}</p></div>`;
+        score[1].style.display = 'none';
+        save[1].style.display = 'none';
     }
 
     function addScoreCapitan(displayedScoreCapitan) {
         result[2].innerHTML += `<div class="note"><p class="result__item">Ваша оценка: ${displayedScoreCapitan}</p></div>`;
+        score[2].style.display = 'none';
+        save[2].style.display = 'none';
     }
 
     function addScoreTor(displayedScoreTor) {
         result[3].innerHTML += `<div class="note"><p class="result__item">Ваша оценка: ${displayedScoreTor}</p></div>`;
+        score[3].style.display = 'none';
+        save[3].style.display = 'none';
     }
 
     function addScoreHulk(displayedScoreHulk) {
         result[4].innerHTML += `<div class="note"><p class="result__item">Ваша оценка: ${displayedScoreHulk}</p></div>`;
+        score[4].style.display = 'none';
+        save[4].style.display = 'none';
     }
 
     function addScoreWidow(displayedScoreWidow) {
         result[5].innerHTML += `<div class="note"><p class="result__item">Ваша оценка: ${displayedScoreWidow}</p></div>`;
+        score[5].style.display = 'none';
+        save[5].style.display = 'none';
     }
 
     function addScoreDeadpool(displayedScoreDeadpool) {
         result[6].innerHTML += `<div class="note"><p class="result__item">Ваша оценка: ${displayedScoreDeadpool}</p></div>`;
+        score[6].style.display = 'none';
+        save[6].style.display = 'none';
     }
 
     //добавление рейтинга
@@ -167,6 +184,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
         ironman = '';
 
         addScoreIronman(displayedScoreIronman);
+        
     });
 
     save[1].addEventListener("click", () => {
