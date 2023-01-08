@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    color: rgb(11, 111, 198);
+    text-align: center;
+    padding-top: 20px;
+}
+
+.subtitle {
+    color: rgb(255, 157, 0);
+    padding-top: 20px;
+    font-size: 18px;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 500px;
+    padding: 1rem;
+    border: 2px solid rgb(42, 176, 209);
+    border-radius: 3px;
+}
+
+.main__item {
+    margin-top: 1rem;
+}
+
+.field {
+    width: 300px;
+    padding: 5px;
+    border: 2px solid rgb(42, 176, 209);
+    border-radius: 10px;
+}
+
+.notes {
+    margin-top: 0.5rem;
+    width: 300px;
+}
+
+.notes__item {
+    margin: 0;
+    font-size: 12px;
+}
+
+.notes__items {
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+
+.code {
+    color: rgb(11, 111, 198);
+}
+
+.number {
+    color: rgb(255, 157, 0);
+}
+
+.textarea {
+    width: 500px;
+}
+
+.button {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 1rem 2rem;
+    background: rgb(42, 176, 209);
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.button:hover {
+    background: rgb(255, 157, 0);
+}
