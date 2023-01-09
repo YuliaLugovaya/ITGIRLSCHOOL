@@ -121,8 +121,6 @@ btn.addEventListener("click", checkErrors);
 
 
 // POST запрос (данные формы в формате JSON) 
-let add = document.querySelector('.add');
-let gifs = [];
 
 btn.addEventListener('click', (e) => {
     e.preventDefault();
