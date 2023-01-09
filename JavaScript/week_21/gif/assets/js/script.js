@@ -12,7 +12,7 @@ btn.addEventListener('click', (e) => {
 
     async function loadData(){
         try {
-            let response = await fetch(`https://api.giphy.com/v1/gifs/search?api_key=C0ZP0xR1klDe6ID8tIORjR17tQTEUjYx&limit=5&offset=0&q=${search}`);
+            let response = await fetch(`https://api.giphy.com/v1/gifs/search?api_key=C0ZP0xR1klDe6ID8tIORjR17tQTEUjYx&q=${search}&limit=5&offset=0&rating=g&lang=en`);
             let pictures = await response.json();
     
             gifs = pictures.data;
@@ -28,7 +28,7 @@ btn.addEventListener('click', (e) => {
 
     //с помощью промисов
 
-    /*fetch(`https://api.giphy.com/v1/gifs/search?api_key=C0ZP0xR1klDe6ID8tIORjR17tQTEUjYx&limit=5&offset=0&q=${search}`)
+    /*fetch(`https://api.giphy.com/v1/gifs/search?api_key=C0ZP0xR1klDe6ID8tIORjR17tQTEUjYx&q=${search}&limit=5&offset=0&rating=g&lang=en`)
     .then(response => response.json())
     .then(pictures => {
         gifs = pictures.data;
